@@ -1,0 +1,14 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @include mob-only {
+    max-width: 320px;
+  }
+  @include tab-only {
+    width: 768px;
+  }
+  @include pc-only {
+    width: 1200px;
+  }
+}
