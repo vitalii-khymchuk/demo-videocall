@@ -53,7 +53,38 @@
       </div>
     </div>
     <div class="hero">
-      <h1 class="hero__title title">passion</h1>
+      <h1 class="hero__title">
+        <span class="hero__title--white">ice cream made with</span>
+        <span class="hero__title title">passion</span>
+      </h1>
+      <ul class="hero__buttons">
+        <li><a href="" class="btn btn--inv hero__btn">Products</a></li>
+        <li><a href="" class="btn hero__btn">How it’s made?</a></li>
+      </ul>
+      <article class="hero__benefits benefits">
+        <picture benefits-img>
+          <source
+            srcset="
+              ./images/hero-2-pc-1x-min.png 1x,
+              ./images/hero-2-pc-2x-min.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-2-tab-1x-min.png 1x,
+              ./images/hero-2-tab-2x-min.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img src="./images/hero-2-pc-2x-min.png" alt="milk" />
+        </picture>
+        <p class="benefits__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <a href="" class="btn--circle"></a>
+      </article>
     </div>
   </div>
 </header>
