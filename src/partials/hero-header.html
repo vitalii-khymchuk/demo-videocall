@@ -26,7 +26,7 @@
       <button type="button" class="btn header__btn">
         <span>Buy now</span><span>></span>
       </button>
-      <button class="header__mobile-menu-btn" type="button">
+      <button class="header__mobile-menu-open-btn" type="button">
         <svg width="20" height="12">
           <use href="./images/symbol-defs.svg#icon-menu-burger-btn-min"></use>
         </svg>
@@ -39,8 +39,11 @@
         </svg>
       </button>
       <a href="" class="btn mobile-menu__btn"
-        ><span>Buy now</span> <span class="mobile-menu__btn--symbol">></span></a
-      >
+        >Buy now
+        <svg class="bracket-icon" width="7" height="10">
+          <use href="./images/symbol-defs.svg#icon-bracket"></use>
+        </svg>
+      </a>
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item">
           <a href="" class="header__link">Home</a>
@@ -68,31 +71,31 @@
         <li><a href="" class="btn btn--inv hero__btn">Products</a></li>
         <li><a href="" class="btn hero__btn">How it’s made?</a></li>
       </ul>
-      <article class="hero__benefits benefits">
-        <picture benefits-img>
-          <source
-            srcset="
-              ./images/hero-2-pc-1x-min.png 1x,
-              ./images/hero-2-pc-2x-min.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./images/hero-2-tab-1x-min.png 1x,
-              ./images/hero-2-tab-2x-min.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <img src="./images/hero-2-pc-2x-min.png" alt="milk" />
-        </picture>
-        <p class="benefits__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <a href="" class="btn--circle"></a>
-      </article>
       <div class="hero__bg-items">
+        <div class="hero-bg__right-side">
+          <picture right-side__img>
+            <source
+              srcset="
+                ./images/hero-2-pc-1x-min.png 1x,
+                ./images/hero-2-pc-2x-min.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/hero-2-tab-1x-min.png 1x,
+                ./images/hero-2-tab-2x-min.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img src="./images/hero-2-pc-2x-min.png" alt="milk" />
+          </picture>
+          <p class="right-side__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a href="" class="right-side__btn btn--circle"></a>
+        </div>
         <div class="hero-bg__center">
           <picture class="hero-bg__center-img">
             <source
@@ -126,7 +129,7 @@
             </li>
           </ul>
         </div>
-        <picture class="left-bottom__img">
+        <picture class="hero-bg__bottom-img">
           <source
             srcset="
               ./images/hero-3-pc-1x-min.png 1x,

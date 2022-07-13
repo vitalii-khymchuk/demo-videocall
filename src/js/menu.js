@@ -1,8 +1,8 @@
 (() => {
   const refs = {
     body: document.body,
-    openMenuBtn: document.querySelector('.header__mobile-menu-btn'),
-    closeMenuBtn: document.querySelector('.menu-mob__close-btn'),
+    openMenuBtn: document.querySelector('.header__mobile-menu-open-btn'),
+    closeMenuBtn: document.querySelector('.mobile-menu-close-btn'),
     menu: document.querySelector('.mobile-menu'),
   };
   console.log(refs);
@@ -11,6 +11,6 @@
 
   function toggleMenu() {
     refs.body.classList.toggle('no-scroll');
-    refs.menu.classList.toggle('is-hidden');
+    refs.menu.classList.toggle('not-visible');
   }
 })();
