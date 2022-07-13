@@ -54,8 +54,8 @@
     </div>
     <div class="hero">
       <h1 class="hero__title">
-        <span class="hero__title--white">ice cream made with</span>
-        <span class="hero__title title">passion</span>
+        <span class="title hero__title--white">ice cream made with</span>
+        <span class="title hero__title">passion</span>
       </h1>
       <ul class="hero__buttons">
         <li><a href="" class="btn btn--inv hero__btn">Products</a></li>
@@ -85,6 +85,58 @@
         </p>
         <a href="" class="btn--circle"></a>
       </article>
+      <div class="hero__bg-items">
+        <div class="hero-bg__center">
+          <picture class="hero-bg__center-img">
+            <source
+              srcset="
+                ./images/hero-1-pc-1x-min.png 1x,
+                ./images/hero-1-pc-2x-min.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/hero-1-tab-1x-min.png 1x,
+                ./images/hero-1-tab-2x-min.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img src="./images/hero-1-pc-2x-min.png" alt="ice-cream" />
+          </picture>
+        </div>
+        <div class="hero-bg__left-side">
+          <ul class="left-side__list">
+            <li left-side__item>
+              <div left-side__white-circle></div>
+              <span class="left-side__number title">16</span>
+              <span class="left-side__text">cafes</span>
+            </li>
+            <li left-side__item>
+              <div left-side__white-circle></div>
+              <span class="left-side__number title">23</span>
+              <span class="left-side__text">food trucks</span>
+            </li>
+          </ul>
+        </div>
+        <picture class="left-bottom__img">
+          <source
+            srcset="
+              ./images/hero-3-pc-1x-min.png 1x,
+              ./images/hero-3-pc-2x-min.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/hero-3-tab-1x-min.png 1x,
+              ./images/hero-3-tab-2x-min.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img src="./images/hero-3-pc-2x-min.png" alt="girl enjoy ice-cream" />
+        </picture>
+      </div>
     </div>
   </div>
 </header>
