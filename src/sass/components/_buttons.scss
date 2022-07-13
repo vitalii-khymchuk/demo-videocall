@@ -24,3 +24,20 @@
     color: $extra-text-color;
   }
 }
+
+.btn--circle {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: $main-bg-color;
+  color: $accent-color;
+  background-image: url(../images/arrow-right.svg);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover,
+  &:focus {
+    background-color: $sub-title-color;
+  }
+}
