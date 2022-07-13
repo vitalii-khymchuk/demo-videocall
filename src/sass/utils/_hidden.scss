@@ -1,0 +1,9 @@
+.hidden,
+.is-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  margin: -1px;
+  pointer-events: none;
+}
