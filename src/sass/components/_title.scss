@@ -6,6 +6,15 @@
   text-align: center;
   text-transform: uppercase;
   color: $sub-title-color;
+  @include tab-only {
+    font-size: 26px;
+    line-height: 1.15px;
+  }
+  @include pc-only {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
 }
 
 .title {
@@ -17,4 +26,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $title-color;
+
+  @include tab-only {
+    font-size: 48px;
+  }
+  @include pc-only {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
 }
