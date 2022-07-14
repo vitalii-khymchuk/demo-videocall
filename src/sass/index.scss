@@ -5,6 +5,8 @@
 
 @import './components/container';
 @import './components/buttons';
+@import './components/title';
+@import './utils/hidden';
 
 @import './layouts/hero-header';
 @import './layouts/products';
@@ -14,3 +16,5 @@
 @import './layouts/rewiews';
 @import './layouts/contacts';
 @import './layouts/footer';
+@import './layouts/modal';
+@import './layouts/mobile-menu';
