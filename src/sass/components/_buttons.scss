@@ -4,6 +4,7 @@
   height: 44px;
   border-radius: 999px;
   @include flex-center;
+  border: none;
 
   background-color: $main-bg-color;
   color: $accent-color;
@@ -16,7 +17,6 @@
   &:focus {
     background-color: #ecebeb;
     color: $accent-color;
-    border: none;
   }
 
   &--inv {
