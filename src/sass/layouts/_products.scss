@@ -203,6 +203,8 @@
 }
 
 .products__points {
+  margin-top: 32px;
+  margin-bottom: 32px;
   display: inline-flex;
   width: 6px;
   height: 6px;
@@ -212,12 +214,16 @@
 
   &:after {
     content: '';
+    width: 6px;
+    height: 6px;
     color: white;
     left: 4px;
   }
 
   &:before {
     content: '';
+    width: 6px;
+    height: 6px;
     color: white;
     right: 4px;
   }
@@ -229,11 +235,8 @@
   font-size: 14px;
   letter-spacing: 0.04em;
   color: $extra-text-color;
+  margin-bottom: 60px;
 }
-// .products__btn {
-// }
-// .btn_arrow-small {
-// }
 
 .products__btn .btn_arrow-big {
   display: flex;
