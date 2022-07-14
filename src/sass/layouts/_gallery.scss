@@ -1,0 +1,50 @@
+.gallery {
+  background-image: linear-gradient(
+      to bottom,
+      #fff5f6 20%,
+      $main-bg-color 20%,
+      $main-bg-color 80%
+    ),
+    url(../images/gallery-mob-1x-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// .gallery__wrapper {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+//   grid-template-rows: repeat(3, 1fr);
+//   grid-gap: 2.5px;
+//   grid-auto-rows: minmax(43px, auto);
+// }
+
+// .gallery__item {
+//   display: grid;
+//   width: auto;
+// }
+
+// .item-1 {
+//   align-self: start;
+// }
+
+// .item-4 {
+//   align-self: start;
+// }
+// .item-5 {
+//   align-self: baseline;
+// }
+// .item-6 {
+//   align-self: flex-end;
+// }
+// .item-7 {
+//   align-self: start;
+// }
+// .item-8 {
+//   align-self: start;
+// }
+// .item-9 {
+//   align-self: start;
+// }
+// .item-10 {
+//   align-self: start;
+// }
