@@ -86,10 +86,11 @@
         padding-right: 37px;
         cursor: pointer;
 
-    &:hover {
-        background-color:  $accent-color;
-        color: $main-bg-color;
-    }
+        &:hover,
+        &:focus {
+          background-color: #ecebeb;
+          color: $accent-color;
+        }
 }
 
 
@@ -97,7 +98,9 @@
     margin-left: 14px;
     color: $accent-color;
 
-    &:hover {
-        color: $main-bg-color;
+    &:hover,
+    &:focus {
+        background-color: #ecebeb;
+        color: $accent-color;
     }
 }
