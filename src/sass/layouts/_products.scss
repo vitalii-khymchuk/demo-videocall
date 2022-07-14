@@ -63,7 +63,7 @@
         background-image: url(../images/products-1-pc-1x-min.png);
         width: 370px;
         height: 395px;
-        top: -45%;
+        top: -50%;
 
         @include retina {
           background-image: url(../images/products-1-pc-2x-min.png);
@@ -107,7 +107,7 @@
         background-image: url(../images/products-2-pc-1x-min.png);
         width: 370px;
         height: 395px;
-        top: -45%;
+        top: -50%;
 
         @include retina {
           background-image: url(../images/products-2-pc-2x-min.png);
@@ -150,7 +150,7 @@
         background-image: url(../images/products-3-pc-1x-min.png);
         width: 370px;
         height: 395px;
-        top: -45%;
+        top: -50%;
 
         @include retina {
           background-image: url(../images/products-3-pc-2x-min.png);
@@ -169,26 +169,24 @@
 }
 
 .products__card {
-  padding: 260px 40px 40px 40px;
+  padding: 160px 40px 40px 40px;
   width: 100%;
-  height: 480px;
+  height: 490px;
 
   @include tab-only {
+    padding: 120px 32px 40px 32px;
     width: 225px;
     height: 475px;
   }
 
   @include pc-only {
+    padding: 165px 63px 60px;
+    padding-top: 165px;
+    padding-bottom: 60px;
     width: 370px;
     height: 535px;
   }
 }
-
-// .products__img {
-//   width: 100%;
-//   position: absolute;
-//   top: -25%;
-// }
 
 .products__name {
   font-family: 'Titan One', sans-serif;
@@ -198,34 +196,42 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: $extra-text-color;
+
+  @include pc-only {
+    font-size: 30px;
+  }
 }
 
 .products__points {
+  display: block;
+  justify-content: center;
   margin-top: 32px;
   margin-bottom: 32px;
-  display: inline-flex;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   color: white;
-  text-align: center;
+  overflow: hidden;
+  align-self: center;
 
-  &:after {
+  &::before {
     content: '';
-    width: 6px;
-    height: 6px;
-    color: white;
-    left: 4px;
-  }
-
-  &:before {
-    content: '';
+    display: inline-flex;
     width: 6px;
     height: 6px;
     color: white;
     right: 4px;
+  }
+
+  &::after {
+    content: '';
+    display: inline-flex;
+    width: 6px;
+    height: 6px;
+    color: white;
+    left: -4px;
+    top: 0;
   }
 }
 
@@ -235,15 +241,17 @@
   font-size: 14px;
   letter-spacing: 0.04em;
   color: $extra-text-color;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
+
+  @include pc-only {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
 }
 
-.products__btn .btn_arrow-big {
+.product__btn.btn--circle {
   display: flex;
   text-align: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  color: white;
+  align-self: center;
 }
