@@ -40,6 +40,7 @@
         width: 40px;
         height: 50px;
         margin-bottom: 16px;
+        background-size: contain;
         @include tab-only{
             margin-bottom: 36px;
         }
@@ -87,6 +88,7 @@
 .icon {
     &__first::before {
         background-image: url(../images/advant/advant-img1.png);
+        background-size: contain;
         width: 33px;
         @include retina{
             background-image:url(../images/advant/advant-img1@2x.png);
