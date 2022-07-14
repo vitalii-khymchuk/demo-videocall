@@ -1,13 +1,13 @@
 .header-hero {
-  padding-top: 8px;
-  padding-bottom: 158px;
   background-color: #ffb8ca;
   position: relative;
-  z-index: -3;
+  z-index: 0;
 }
 
 .header-hero__container {
   position: relative;
+  padding-top: 8px;
+  padding-bottom: 158px;
 }
 
 .header {
@@ -71,11 +71,10 @@
 }
 
 .hero-bg__center {
-  display: none;
   position: absolute;
   overflow: visible;
   z-index: -2;
-  top: 75px;
+  top: 83px;
   left: 63%;
   width: 346px;
   height: 344px;
@@ -104,47 +103,4 @@
 
 .hero-bg__bottom-img {
   display: none;
-}
-
-.header__mobile-menu-open-btn,
-.mobile-menu-close-btn {
-  border: none;
-  background-color: transparent;
-}
-
-.mobile-menu-close-btn {
-  position: absolute;
-  display: flex;
-  top: 20px;
-  right: 34px;
-}
-
-.mobile-menu.not-visible {
-  transform: translateX(-250px);
-  transition: transform 500ms linear;
-}
-
-.mobile-menu {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-
-  padding-top: 60px;
-  width: 250px;
-  height: 100%;
-  transform: translateX(0);
-  transition: transform 500ms linear;
-
-  background-color: #ffb8ca;
-}
-
-.mobile-menu__btn {
-  max-width: 209px;
-  height: 44px;
-}
-
-.bracket-icon {
-  margin-left: 16px;
-  margin-top: 2px;
 }
