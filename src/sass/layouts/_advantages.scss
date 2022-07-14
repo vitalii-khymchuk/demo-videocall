@@ -1,6 +1,112 @@
-.advent{
-    background-color: aqua;
-    display: block;
 
+.advent{
+   background-color: $secondary-bg-color;
+   padding-top: 40px;
+   padding-bottom: 60px;
+   @include tab-only{
+    padding-bottom: 64px;
+  }
+  @include pc-only{
+    padding-bottom: 120px;
+  }
+
+
+   &__list{
+    @include tab-only{
+      display: flex;
+    }
+    @include pc-only{
+        display: flex;
+      }
+}
+   &__item{
+    @include tab-only{
+        margin-right: 4px;
+        margin-bottom: 0;
+       }
+    @include pc-only{
+        margin-right: 115px;
+    }
+    &:last-child{
+        margin-right: 0px;
+    }
+    margin-bottom: 32px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 50px;
+        margin-bottom: 16px;
+        @include tab-only{
+            margin-bottom: 36px;
+        }
+    
+    }
+}
+   
+&__number{
+    @include tab-only{
+      font-size: 48px;   
+      margin-bottom: 13px;
+    }
+    @include pc-only{
+        font-size: 58px;   
+        margin-bottom: 16px;
+      }
+
+    font-family: "Titan One";
+    font-weight: 400;
+    font-size: 36px;
+    line-height:1.17;
+    color: $accent-color;
+    margin-bottom: 18px;
+    }
+   
+   &__text{
+    @include tab-only{
+        font-size: 14px;
+        width: 180px;
+    }
+    @include pc-only{
+        font-size: 16px;
+        width: 288px;
+    }
+    width: 230px;
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 12px;
+    line-height:1.7;
+    color: $secondary-text-color;
+    }
+   }
+
+    
+.icon {
+    &__first::before {
+        background-image: url(../images/advant/advant-img1.png);
+        width: 33px;
+        @include retina{
+            background-image:url(../images/advant/advant-img1@2x.png);
+        }
+      
+    }
+    &__second::before {
+        background-image: url(../images/advant/advant-img2.png);
+        width: 50px;
+        @include retina{
+            background-image:url(../images/advant/advant-img2@2x.png);
+        }
+     }
+     &__third::before {
+        background-image: url(../images/advant/advant-img3.png);
+        width: 46px;
+        @include retina{
+            background-image:url(../images/advant/advant-img3@2x.png);
+        }
+     }
 
 }
+
