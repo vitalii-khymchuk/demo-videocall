@@ -5,7 +5,7 @@
     @media screen and (max-width: 767px){
     background-image: url(../images/how-it-made-2-mob-1x-min.png);
     background-repeat: no-repeat;
-    background-position: 0 88%;
+    background-position: 0 80%;
     background-size: contain;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/how-it-made-2-mob-2x-min.png);
@@ -21,19 +21,19 @@
         text-transform: uppercase;
         color: $sub-title-color;
     }
-
-    &__title {
-        text-align: center;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-bottom: 26px;
-        font-family: 'Titan One';
-        font-size: 34px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        color: $title-color;
-    }
 }
+
+.title {
+    font-family: 'Titan One', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $title-color;
+}
+
 
 .about__image {
     margin-bottom: 40px;
@@ -73,25 +73,32 @@
 }
 
 .about__btn {
-        align-items: center;
-        font-size: 14px;
-        line-height: 1.29;
-        text-align: center;
-        border-radius: 22px;
-        border: 2px solid transparent;
-        background-color: $main-bg-color;
-        color: $accent-color;
-        height: 44px;
-        padding-left: 37px;
-        padding-right: 37px;
-        cursor: pointer;
-
-        &:hover,
-        &:focus {
-          background-color: #ecebeb;
-          color: $accent-color;
-        }
-}
+    display: block;
+    width: 159px;
+    height: 44px;
+    border-radius: 999px;
+    @include flex-center;
+    border: none;
+  
+    background-color: $main-bg-color;
+    color: $accent-color;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+  
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+      color: $accent-color;
+    }
+  
+    &--inv {
+      background-color: $title-color;
+      color: $extra-text-color;
+    }
+  }
+  
 
 
 .btn__bracket {
