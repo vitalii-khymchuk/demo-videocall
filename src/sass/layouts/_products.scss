@@ -1,5 +1,7 @@
-// .products {
-// }
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .products__toptext {
   padding-bottom: 15px;
@@ -16,6 +18,7 @@
   }
 
   @include pc-only {
+    display: flex;
     gap: 32px;
   }
 }
@@ -27,16 +30,133 @@
   &.first {
     background-color: #ffb8ca;
     border-radius: 24px;
+    display: inline-flex;
+    align-items: center;
+
+    &.first::before {
+      content: '';
+      position: absolute;
+      display: flex;
+      background-image: url(../images/products-1-mob-1x-min.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 280px;
+      height: 280px;
+      top: -30%;
+
+      @include retina {
+        background-image: url(../images/products-1-mob-2x-min.png);
+      }
+
+      @include tab-only {
+        background-image: url(../images/products-1-tab-1x-min.png);
+        width: 224px;
+        height: 224px;
+
+        @include retina {
+          background-image: url(../images/products-1-tab-2x-min.png);
+        }
+      }
+
+      @include pc-only {
+        background-image: url(../images/products-1-pc-1x-min.png);
+        width: 370px;
+        height: 395px;
+        top: -45%;
+
+        @include retina {
+          background-image: url(../images/products-1-pc-2x-min.png);
+        }
+      }
+    }
   }
 
   &.second {
     background-color: #f0d1a5;
     border-radius: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: flex;
+      background-image: url(../images/products-2-mob-1x-min.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 280px;
+      height: 280px;
+      top: -30%;
+
+      @include retina {
+        background-image: url(../images/products-2-mob-2x-min.png);
+      }
+
+      @include tab-only {
+        background-image: url(../images/products-2-tab-1x-min.png);
+        width: 224px;
+        height: 224px;
+        top: -30%;
+
+        @include retina {
+          background-image: url(../images/products-2-tab-2x-min.png);
+        }
+      }
+
+      @include pc-only {
+        background-image: url(../images/products-2-pc-1x-min.png);
+        width: 370px;
+        height: 395px;
+        top: -45%;
+
+        @include retina {
+          background-image: url(../images/products-2-pc-2x-min.png);
+        }
+      }
+    }
   }
 
   &.third {
     background-color: #c2e297;
     border-radius: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: flex;
+      background-image: url(../images/products-3-mob-1x-min.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 280px;
+      height: 280px;
+      top: -30%;
+
+      @include retina {
+        background-image: url(../images/products-3-mob-2x-min.png);
+      }
+
+      @include tab-only {
+        background-image: url(../images/products-3-tab-1x-min.png);
+        width: 224px;
+        height: 224px;
+
+        @include retina {
+          background-image: url(../images/products-3-tab-2x-min.png);
+        }
+      }
+
+      @include pc-only {
+        background-image: url(../images/products-3-pc-1x-min.png);
+        width: 370px;
+        height: 395px;
+        top: -45%;
+
+        @include retina {
+          background-image: url(../images/products-3-pc-2x-min.png);
+        }
+      }
+    }
   }
 
   @include tab-only {
@@ -47,7 +167,9 @@
     margin-top: 260px;
   }
 }
+
 .products__card {
+  padding: 260px 40px 40px 40px;
   width: 100%;
   height: 480px;
 
@@ -59,16 +181,6 @@
   @include pc-only {
     width: 370px;
     height: 535px;
-  }
-}
-
-.products__card::before {
-  background-image: url(/src/images/products-1-mob-1x-min.png);
-  background-position: center;
-  width: 100%;
-
-  @include retina {
-    background-image: url(/src/images/products-1-mob-2x-min.png);
   }
 }
 
@@ -88,15 +200,6 @@
   text-transform: uppercase;
 
   color: $extra-text-color;
-  margin-top: 160px;
-
-  @include tab-only {
-    margin-top: 120px;
-  }
-
-  @include pc-only {
-    margin-top: 165px;
-  }
 }
 
 .products__points {
@@ -108,13 +211,15 @@
   text-align: center;
 
   &:after {
+    content: '';
     color: white;
-    margin-left: 4px;
+    left: 4px;
   }
 
   &:before {
+    content: '';
     color: white;
-    margin-right: 4px;
+    right: 4px;
   }
 }
 
@@ -129,3 +234,13 @@
 // }
 // .btn_arrow-small {
 // }
+
+.products__btn .btn_arrow-big {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+}
