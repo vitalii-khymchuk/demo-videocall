@@ -3,11 +3,11 @@ var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   speed: 800,
   autoplay: {
-    delay: 4000,
+    delay: 500,
   },
   disableOnInteraction: false,
   pauseOnMouseEnter: true,
-  loop: true,
+  // loop: true,
   paginationClickable: true,
 
   pagination: {
