@@ -123,6 +123,7 @@
 
 .swiper-container {
   display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
 }
 
@@ -154,7 +155,7 @@
       bottom: 102px;
     }
     @include pc-only {
-      bottom: 118px;
+      bottom: 86px;
     }
   }
 }
@@ -162,8 +163,12 @@
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
+  background: #d9d9d9;
+  border-radius: 50%;
 }
-
+.swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 12px;
+}
 .swiper-pagination-bullet-active {
   width: 14px;
   height: 12px;
