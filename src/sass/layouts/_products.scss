@@ -27,13 +27,13 @@
   position: relative;
   margin-top: 150px;
 
-  &.first {
+  &:first-child {
     background-color: #ffb8ca;
     border-radius: 24px;
     display: inline-flex;
     align-items: center;
 
-    &.first::before {
+    &:first-child::before {
       content: '';
       position: absolute;
       display: flex;
@@ -72,7 +72,7 @@
     }
   }
 
-  &.second {
+  &:nth-child(2) {
     background-color: #f0d1a5;
     border-radius: 24px;
 
@@ -116,7 +116,7 @@
     }
   }
 
-  &.third {
+  &:last-child {
     background-color: #c2e297;
     border-radius: 24px;
 
