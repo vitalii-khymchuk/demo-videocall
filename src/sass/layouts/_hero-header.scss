@@ -11,11 +11,11 @@
   padding-bottom: 158px;
   overflow: visible;
   @include tab-only {
-    padding-top: 32px;
+    padding-top: 102px;
     padding-bottom: 190px;
   }
   @include pc-only {
-    padding-top: 37px;
+    padding-top: 147px;
     padding-bottom: 316px;
   }
 }
@@ -24,15 +24,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tab-pc {
+    position: fixed;
+    top: 37px;
+    width: 1168px;
+
+    border-radius: 20px;
+    background-color: rgba(255, 165, 186, 0.5);
+    @include tab-only {
+      width: 704px;
+      top: 32px;
+    }
+  }
 }
-.logo {
-}
+
 .logo__svg {
   max-width: 199px;
   max-height: 50px;
 }
-.header__nav {
-}
+
 .nav {
   display: none;
 
@@ -86,14 +97,14 @@
   font-size: 48px;
   line-height: 96.5%;
   @include tab-only {
-    margin-top: 20px;
+    margin-top: 0px;
 
     font-size: 34px;
     line-height: 90.5%;
   }
   @include pc-only {
     width: 277px;
-    margin-top: 60px;
+    margin-top: 0px;
     font-size: 58px;
     line-height: 90.5%;
   }
@@ -196,12 +207,12 @@
   @include tab-pc {
     display: block;
     position: absolute;
-    right: 32px;
+    right: 51px;
     top: 92px;
   }
   @include pc-only {
     top: 152px;
-    right: 16px;
+    right: 35px;
   }
 }
 
