@@ -4,13 +4,14 @@
     padding-bottom: 20px;
     
     &__label {
-        text-align: center;
-        margin-bottom: 15px;
-        font-family: 'Titan One';
+        font-family: 'Titan One', sans-serif;
+        font-weight: 400;
         font-size: 18px;
-        line-height: 1.11;
+        line-height: 1.16;
+        text-align: center;
         text-transform: uppercase;
         color: $sub-title-color;
+        margin-bottom: 15px;
     }
 }
 
@@ -18,7 +19,7 @@
     @media screen and (max-width: 767px){
         background-image: url(../images/how-it-made-2-mob-1x-min.png);
         background-repeat: no-repeat;
-        background-position: center 80%;
+        background-position: center 74%;
         max-width: 280px;
         padding-left: 0;
         padding-right: 0;
@@ -78,11 +79,15 @@
         margin-bottom: 47px;
 }
 
+.text-explanation {
+    max-width: 220px;
+}
+
 .about__btn {
     display: block;
-    width: 159px;
+   
     height: 44px;
-    border-radius: 999px;
+    
     @include flex-center;
     border: none;
   
@@ -90,8 +95,7 @@
     color: $accent-color;
   
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.3;
+   
   
     &:hover,
     &:focus {
@@ -105,9 +109,18 @@
     }
   }
   
-
-
 .btn__bracket {
+    font-size: 14px;
+    line-height: 1.3;
+    width: 176px;
+    border-radius: 22px;
+    text-align: center;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+
+.icon__bracket {
     margin-left: 14px;
     color: $accent-color;
 
