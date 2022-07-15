@@ -15,7 +15,6 @@
 }
 
 .mobile-menu.not-visible {
-  transform: translateX(250px) scaleX(0);
 }
 
 .mobile-menu {
@@ -27,9 +26,6 @@
   padding-top: 60px;
   width: 250px;
   height: 100vh;
-
-  transform: translateX(0) scaleX(1);
-  transition: transform 50ms linear, transform 500ms linear;
 
   background-color: #e17992;
 
