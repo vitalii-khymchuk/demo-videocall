@@ -2,6 +2,9 @@
 .mobile-menu-close-btn {
   border: none;
   background-color: transparent;
+  @include pc-only {
+    display: none;
+  }
 }
 
 .mobile-menu-close-btn {
@@ -29,6 +32,10 @@
   transition: transform 50ms linear, transform 500ms linear;
 
   background-color: #e17992;
+
+  @include pc-only {
+    display: none;
+  }
 }
 
 .mobile-menu__btn-wrapper {
