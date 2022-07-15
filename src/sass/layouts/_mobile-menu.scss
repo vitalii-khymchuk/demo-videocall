@@ -15,6 +15,7 @@
 }
 
 .mobile-menu.not-visible {
+  transform: translateX(250px) scaleX(0);
 }
 
 .mobile-menu {
