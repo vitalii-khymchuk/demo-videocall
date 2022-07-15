@@ -1,6 +1,7 @@
 .customer-reviews {
   padding-top: 30px;
   padding-bottom: 30px;
+
   @include tab-pc {
     padding-top: 35px;
     padding-bottom: 40px;
@@ -12,9 +13,24 @@
 }
 
 .customer-reviews__container {
-  @extend .container;
-  // width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @include tab-pc {
+    width: 768px;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+  @include pc-only {
+    width: 1200px;
+    padding-left: 116px;
+    padding-right: 116px;
+  }
 }
 
 .customer-reviews__photo {
@@ -36,6 +52,7 @@
 
 .customer-reviews__text-area {
   position: relative;
+  color: $secondary-text-color;
   font-size: 12px;
   line-height: 2.55;
   margin-bottom: 32px;
@@ -93,6 +110,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 1.86;
+  color: $secondary-text-color;
   text-align: center;
   @include tab-pc {
     font-size: 16px;
