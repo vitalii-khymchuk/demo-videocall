@@ -1,23 +1,23 @@
-.customer-reviews {
+.reviews {
   padding-top: 30px;
   padding-bottom: 30px;
-  @media screen and (min-width: 768px) {
+  @include tab-pc {
     padding-top: 35px;
     padding-bottom: 40px;
   }
-  @media screen and (min-width: 1200px) {
+  @include pc-only {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-.customer-reviews__container {
+.reviews__container {
   @extend .container;
   width: 100%;
   text-align: center;
 }
 
-.customer-reviews__photo {
+.reviews__photo {
   display: block;
   max-width: 100%;
   height: auto;
@@ -34,7 +34,7 @@
   }
 }
 
-.customer-reviews__text-area {
+.reviews__text-area {
   position: relative;
   font-size: 12px;
   line-height: 2.55;
@@ -44,7 +44,7 @@
   padding-left: 50px;
   padding-right: 50px;
   background-color: #fafafa;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @mixin tab-only {
     font-size: 14px;
     line-height: 2.16;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-.customer-reviews__content {
+.reviews__content {
   margin: 0;
   position: relative;
   padding-left: 10px;
@@ -79,7 +79,7 @@
     #e1e1e1 1px,
     #e1e1e1 30.6px
   );
-  @media (min-width: 1200px) {
+  @include pc-only {
     background-image: repeating-linear-gradient(
       #fafafa00,
       #fafafa00 28.76px,
@@ -89,7 +89,7 @@
   }
 }
 
-.customer-reviews__location {
+.eviews__location {
   margin: 0;
   font-size: 14px;
   line-height: 1.86;
@@ -132,10 +132,10 @@
     background-image: url('../images/symbol-defs.svg#icon-marker');
     background-repeat: no-repeat;
     background-size: contain;
-    @media screen and (min-width: 768px) {
+    @include tab-pc {
       bottom: 102px;
     }
-    @media screen and (min-width: 1200px) {
+    @include pc-only {
       bottom: 118px;
     }
   }
