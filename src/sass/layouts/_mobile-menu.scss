@@ -14,10 +14,6 @@
   right: 34px;
 }
 
-.mobile-menu.not-visible {
-  transform: translateX(250px) scaleX(0);
-}
-
 .mobile-menu {
   position: absolute;
   z-index: 3;
@@ -32,6 +28,10 @@
   transition: transform 50ms linear, transform 500ms linear;
 
   background-color: #e17992;
+
+  &.not-visible {
+    transform: translateX(250px) scaleX(0);
+  }
 
   @include pc-only {
     display: none;
