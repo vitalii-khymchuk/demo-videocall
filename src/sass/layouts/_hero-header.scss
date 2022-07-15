@@ -164,6 +164,9 @@
     height: 333px;
   }
   @include pc-only {
+    top: 54px;
+    left: 784px;
+
     width: 534px;
     height: 534px;
   }
@@ -179,6 +182,13 @@
   @include tab-only {
     top: 248px;
   }
+  @include pc-only {
+    top: 178px;
+    left: 375px;
+
+    width: 557px;
+    height: 236px;
+  }
 }
 
 .hero-bg__right-side {
@@ -188,6 +198,10 @@
     position: absolute;
     right: 32px;
     top: 92px;
+  }
+  @include pc-only {
+    top: 152px;
+    right: 16px;
   }
 }
 
@@ -199,6 +213,18 @@
   }
 }
 
+.right-side__number {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  color: $title-color;
+  @include pc-only {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
 .right-side__white-circle {
   position: absolute;
   z-index: -1;
@@ -207,6 +233,12 @@
   height: 16px;
   border-radius: 50%;
   background-color: $main-bg-color;
+  @include pc-only {
+    top: -5px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .right-side__text {
@@ -214,6 +246,11 @@
   line-height: 1.25;
 
   color: $extra-text-color;
+
+  @include pc-only {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .right-side__text {
@@ -230,6 +267,9 @@
     position: absolute;
     bottom: 16px;
     left: 32px;
+    @include pc-only {
+      grid-auto-columns: 213px;
+    }
   }
 }
 
@@ -244,22 +284,34 @@
   font-size: 8px;
   line-height: 150%;
   color: $extra-text-color;
+  @include pc-only {
+    width: 200px;
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
 
 .left-side__btn {
   width: 18px;
   height: 18px;
   margin-top: 7px;
+  @include pc-only {
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+  }
 }
 
-.hero-bg__bottom {
+.hero-bg__bottom-img {
   display: none;
   @include tab-pc {
     display: block;
     position: absolute;
     bottom: 0;
     right: 32px;
-    width: 190px;
     height: 150px;
+  }
+  @include pc-only {
+    bottom: 91px;
   }
 }
