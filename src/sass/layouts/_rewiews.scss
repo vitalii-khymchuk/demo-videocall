@@ -72,14 +72,13 @@
 
   &::before {
     content: '';
-
     display: inline-block;
     width: 54px;
     height: 40px;
     position: absolute;
     left: 50px;
     top: 26px;
-    background-image: url('../images/symbol-defs.svg#icon-bracket');
+    background-image: url(../images/reviews/bracket.svg);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -123,10 +122,12 @@
 }
 
 .swiper-container {
+  display: flex;
   overflow: hidden;
 }
 
 .swiper-wrapper {
+  display: flex;
   margin-bottom: 16px;
 }
 
@@ -140,14 +141,13 @@
 
   &::after {
     content: '';
-
     position: absolute;
     left: 50%;
     bottom: 94px;
     width: 32px;
     height: 4px;
     transform: translateX(-50%);
-    background-image: url('../images/symbol-defs.svg#icon-marker');
+    background-image: url(../images/reviews/marker.svg);
     background-repeat: no-repeat;
     background-size: contain;
     @include tab-pc {
@@ -168,7 +168,7 @@
   width: 14px;
   height: 12px;
   background: none;
-  background-image: url('../images/symbol-defs.svg#icon-home');
+  background-image: url(../images/reviews/home.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
