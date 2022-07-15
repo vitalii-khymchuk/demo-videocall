@@ -15,6 +15,7 @@
     padding-bottom: 190px;
   }
   @include pc-only {
+    padding-top: 37px;
     padding-bottom: 316px;
   }
 }
@@ -22,6 +23,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo {
 }
@@ -33,12 +35,32 @@
 }
 .nav {
   display: none;
+
+  @include pc-only {
+    display: block;
+  }
 }
+
 .header__list {
+  display: flex;
 }
-.header__item {
+.header__item:not(:last-child) {
+  margin-right: 35px;
 }
 .header__link {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  color: $extra-text-color;
+
+  &:hover,
+  &:focus {
+    color: rgba(212, 20, 67, 1);
+  }
 }
 
 .header__buttons {
@@ -70,7 +92,10 @@
     line-height: 90.5%;
   }
   @include pc-only {
+    width: 277px;
     margin-top: 60px;
+    font-size: 58px;
+    line-height: 90.5%;
   }
 }
 
@@ -85,6 +110,10 @@
     font-size: 22px;
     line-height: 1.14;
   }
+  @include pc-only {
+    font-size: 38px;
+    line-height: 1.16;
+  }
 }
 
 .hero__buttons {
@@ -98,9 +127,19 @@
   font-size: 8px;
   line-height: 1.25;
 
+  @include pc-only {
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
   &.btn--inv {
     width: 62px;
     margin-right: 8px;
+    @include pc-only {
+      width: 107px;
+    }
   }
 }
 
@@ -120,6 +159,9 @@
   @include tab-only {
     left: 415px;
     top: 43px;
+
+    width: 335px;
+    height: 333px;
   }
 }
 
@@ -161,8 +203,6 @@
   height: 16px;
   border-radius: 50%;
   background-color: $main-bg-color;
-}
-.right-side__number {
 }
 
 .right-side__text {
