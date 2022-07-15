@@ -163,6 +163,10 @@
     width: 335px;
     height: 333px;
   }
+  @include pc-only {
+    width: 534px;
+    height: 534px;
+  }
 }
 
 .hero-bg__center-img {
