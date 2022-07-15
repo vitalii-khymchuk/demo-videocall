@@ -204,35 +204,40 @@
   }
 }
 
+.products__element {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .products__points {
   display: block;
-  justify-content: center;
   margin-top: 32px;
   margin-bottom: 32px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  color: white;
-  overflow: hidden;
-  align-self: center;
+  background-color: white;
 
   &::before {
     content: '';
-    display: inline-block;
+    display: flex;
     width: 6px;
     height: 6px;
-    color: white;
-    right: 4px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 10px;
   }
 
   &::after {
     content: '';
-    display: inline-block;
+    display: flex;
     width: 6px;
     height: 6px;
-    color: white;
-    left: -4px;
-    top: 0;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -6px;
+    margin-left: -10px;
   }
 }
 
@@ -252,7 +257,5 @@
 
 .products__btn {
   display: flex;
-  text-align: center;
   justify-content: center;
-  align-self: center;
 }
