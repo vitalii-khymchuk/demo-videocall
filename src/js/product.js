@@ -1,16 +1,20 @@
 (() => {
   const refs = {
     body: document.body,
-    openDescriptionBtn: document.querySelector('.products__open-btn'),
-    closeDescriptionBtn: document.querySelector('.products__close-btn'),
-    description: document.querySelector('.description'),
+    openProductBtn: document.querySelector('.products__open-btn1'),
+    closeProductBtn: document.querySelector('.products__close-btn1'),
+    openProductBtn: document.querySelector('.products__open-btn2'),
+    closeProductBtn: document.querySelector('.products__close-btn2'),
+    openProductBtn: document.querySelector('.products__open-btn3'),
+    closeProductBtn: document.querySelector('.products__close-btn3'),
+    product: document.querySelector('.product'),
   };
   console.log(refs);
-  refs.openDescriptionBtn.addEventListener('click', toggleDescription);
-  refs.closeDescriptionBtn.addEventListener('click', toggleDescription);
+  refs.openProductBtn.addEventListener('click', toggleProduct);
+  refs.closeProductBtn.addEventListener('click', toggleProduct);
 
-  function toggleDescription() {
+  function toggleProduct() {
     refs.body.classList.toggle('no-scroll');
-    refs.description.classList.toggle('not-visible');
+    refs.product.classList.toggle('not-visible');
   }
 })();
