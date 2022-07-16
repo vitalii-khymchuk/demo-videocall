@@ -1,40 +1,45 @@
 <header class="header-hero">
   <div class="container header-hero__container">
     <div class="header">
-      <a href="" class="logo">
+      <a href="/" class="logo">
         <svg class="logo__svg">
           <use href="./images/symbol-defs.svg#icon-logo-min"></use>
         </svg>
       </a>
       <nav class="header__nav nav">
         <ul class="header__list">
-          <li class="header__item"><a href="" class="header__link">Home</a></li>
           <li class="header__item">
-            <a href="" class="header__link">About us</a>
+            <a href="/" class="header__link">Home</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__link">How it’s made?</a>
+            <a href="#footer" class="header__link">About us</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__link">Our products</a>
+            <a href="#about" class="header__link">How it’s made?</a>
           </li>
           <li class="header__item">
-            <a href="" class="header__link">Contact</a>
+            <a href="#products" class="header__link">Our products</a>
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__link">Contact</a>
           </li>
         </ul>
       </nav>
-      <button type="button" class="btn header__btn">
-        <span>Buy now</span><span>></span>
-      </button>
-      <button class="header__mobile-menu-open-btn" type="button">
-        <svg width="20" height="12">
-          <use href="./images/symbol-defs.svg#icon-menu-burger-btn-min"></use>
-        </svg>
-      </button>
+      <div class="header__buttons hide">
+        <button class="header__mobile-menu-open-btn" type="button">
+          <svg width="20" height="12">
+            <use href="./images/symbol-defs.svg#icon-menu-burger-btn-min"></use>
+          </svg>
+        </button>
+        <button type="button" class="btn header__btn" data-modal-open>
+          <span>Buy now</span><span>></span>
+        </button>
+      </div>
     </div>
     <div class="hero">
       <h1 class="title hero__title hero__title--white">
-        ice cream made with
+        ice cream <br />
+        made with
         <span class="title hero__title">passion</span>
       </h1>
       <ul class="hero__buttons">
@@ -42,8 +47,8 @@
         <li><a href="" class="btn hero__btn">How it’s made?</a></li>
       </ul>
       <div class="hero__bg-items">
-        <div class="hero-bg__right-side">
-          <picture right-side__img>
+        <div class="hero-bg__left-side">
+          <picture class="left-side__img">
             <source
               srcset="
                 ./images/hero-2-pc-1x-min.png 1x,
@@ -60,11 +65,11 @@
             />
             <img src="./images/hero-2-pc-2x-min.png" alt="milk" />
           </picture>
-          <p class="right-side__text">
+          <p class="left-side__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <a href="" class="right-side__btn btn--circle"></a>
+          <a href="" class="left-side__btn btn--circle"></a>
         </div>
         <div class="hero-bg__center">
           <picture class="hero-bg__center-img">
@@ -92,27 +97,28 @@
             <img src="./images/hero-mob-2x-min.png" alt="ice-cream" />
           </picture>
         </div>
-        <div class="hero-bg__left-side">
-          <ul class="left-side__list">
-            <li left-side__item>
-              <div left-side__white-circle></div>
-              <span class="left-side__number title">16</span>
-              <span class="left-side__text">cafes</span>
+        <div class="hero-bg__right-side hide2">
+          <ul class="right-side__list">
+            <li class="right-side__item">
+              <div class="right-side__white-circle"></div>
+              <span class="right-side__number">16</span>
+              <span class="right-side__text">cafes</span>
             </li>
-            <li left-side__item>
-              <div left-side__white-circle></div>
-              <span class="left-side__number title">23</span>
-              <span class="left-side__text">food trucks</span>
+            <li class="right-side__item">
+              <div class="right-side__white-circle"></div>
+              <span class="right-side__number">23</span>
+              <span class="right-side__text">food trucks</span>
             </li>
           </ul>
         </div>
-        <picture class="hero-bg__bottom-img">
+        <picture class="hero-bg__bottom-img hide3">
           <source
             srcset="
               ./images/hero-3-pc-1x-min.png 1x,
               ./images/hero-3-pc-2x-min.png 2x
             "
             media="(min-width: 1200px)"
+            width="304"
           />
           <source
             srcset="
@@ -120,8 +126,13 @@
               ./images/hero-3-tab-2x-min.png 2x
             "
             media="(min-width: 768px)"
+            width="190"
           />
-          <img src="./images/hero-3-pc-2x-min.png" alt="girl enjoy ice-cream" />
+          <img
+            src="./images/hero-3-pc-2x-min.png"
+            alt="girl enjoy ice-cream"
+            width="304"
+          />
         </picture>
       </div>
     </div>

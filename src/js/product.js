@@ -1,16 +1,16 @@
 (() => {
   const refs = {
     body: document.body,
-    openMenuBtn: document.querySelector('.products__open-btn'),
-    closeMenuBtn: document.querySelector('.products__close-btn'),
-    menu: document.querySelector('.product'),
+    openDescriptionBtn: document.querySelector('.products__open-btn'),
+    closeDescriptionBtn: document.querySelector('.products__close-btn'),
+    description: document.querySelector('.description'),
   };
   console.log(refs);
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
+  refs.openDescriptionBtn.addEventListener('click', toggleDescription);
+  refs.closeDescriptionBtn.addEventListener('click', toggleDescription);
 
-  function toggleMenu() {
+  function toggleDescription() {
     refs.body.classList.toggle('no-scroll');
-    refs.menu.classList.toggle('not-visible');
+    refs.description.classList.toggle('not-visible');
   }
 })();
