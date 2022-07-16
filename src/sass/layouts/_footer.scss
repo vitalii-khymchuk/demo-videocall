@@ -44,9 +44,10 @@ footer {
 }
 
 .footer-copyright {
+  position: absolute;
   padding-top: 16px;
   border-top: #e1e1e1 1px solid;
-  margin-top: 40px;
+  width: 100%;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
