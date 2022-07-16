@@ -2,6 +2,9 @@
 .mobile-menu-close-btn {
   border: none;
   background-color: transparent;
+  @include pc-only {
+    display: none;
+  }
 }
 
 .mobile-menu-close-btn {
@@ -11,24 +14,27 @@
   right: 34px;
 }
 
-.mobile-menu.not-visible {
-  transform: translateX(250px) scaleX(0);
-}
-
 .mobile-menu {
   position: absolute;
   z-index: 3;
   top: 0;
   right: 0;
-
   padding-top: 60px;
   width: 250px;
   height: 100vh;
 
-  transform: translateX(0) scaleX(1);
+  transform: $transform1;
   transition: transform 50ms linear, transform 500ms linear;
 
   background-color: #e17992;
+
+  &.not-visible {
+    transform: $transform2;
+  }
+
+  @include pc-only {
+    display: none;
+  }
 }
 
 .mobile-menu__btn-wrapper {
