@@ -5,6 +5,14 @@
 
 .products__toptext {
   padding-bottom: 15px;
+
+  @include tab-only {
+    padding-bottom: 18px;
+  }
+
+  @include pc-only {
+    padding-bottom: 16px;
+  }
 }
 
 .products__title {
