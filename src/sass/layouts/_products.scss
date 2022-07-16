@@ -26,6 +26,7 @@
 .products__item {
   position: relative;
   margin-top: 150px;
+  z-index: 0;
 
   &:first-child {
     background-color: #ffb8ca;
