@@ -43,10 +43,9 @@ footer {
 }
 
 .footer-copyright {
-  position: absolute;
+  width: 100vw;
   padding-top: 16px;
   border-top: #e1e1e1 1px solid;
-  width: 100%;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -54,4 +53,5 @@ footer {
   line-height: calc(21 / 14);
   text-align: center;
   color: #907e82;
+  margin-left: -300px;
 }
