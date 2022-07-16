@@ -25,8 +25,8 @@
 
 .products__item {
   position: relative;
-  margin-top: 150px;
   z-index: 0;
+  margin-top: 150px;
 
   &:first-child {
     background-color: #ffb8ca;
@@ -74,7 +74,6 @@
   }
 
   &:nth-child(2) {
-    z-index: 0;
     background-color: #f0d1a5;
     border-radius: 24px;
 
