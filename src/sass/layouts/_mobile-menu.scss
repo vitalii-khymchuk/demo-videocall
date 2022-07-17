@@ -16,7 +16,7 @@
 
 .mobile-menu {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   top: 0;
   right: 0;
   padding-top: 60px;
@@ -29,7 +29,7 @@
   background-color: #e17992;
 
   &.not-visible {
-    transform: $transform2;
+    transform: translateX(250px) scaleX(0);
   }
 
   @include pc-only {
