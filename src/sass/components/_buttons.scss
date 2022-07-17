@@ -42,3 +42,23 @@
     background-color: $sub-title-color;
   }
 }
+
+.btn--circle-return {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: $main-bg-color;
+  color: $accent-color;
+  background-image: url(../images/arrow-right.svg);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+
+  &:hover,
+  &:focus {
+    background-color: $sub-title-color;
+  }
+}
