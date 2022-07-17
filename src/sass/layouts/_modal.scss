@@ -37,19 +37,24 @@
 }
 
 .price {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 // .gallery-ice-list {
 // }
 
 .gallery-ice-item {
-  display: flex;
-  padding: 20px;
+  padding: 18px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 20px;
+  }
 }
 
 .ice-cream {
-  background-color: #14d45161;
+  background-color: #14d451b3;
 }
 
 .ice-coffee {
@@ -98,14 +103,16 @@
   font-family: 'Titan One';
   color: $title-color;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-
   margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
   @media screen and (min-width: 1200px) {
-    line-height: 1.17;
+    font-size: 28px;
   }
 }
 
@@ -129,13 +136,19 @@
 }
 
 .modal__label {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #d41443;
   margin-bottom: 4px;
   display: block;
   margin-left: 10px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
 
 .modal__input {
@@ -143,21 +156,21 @@
   height: 40px;
   border: 1px solid #ffa5ba;
   border-radius: 15px;
-  padding-left: 42px;
+  padding-left: 15px;
   outline: none;
   transition: border-color 250ms;
   &:focus {
     border: 1px solid #d41443;
     background-color: #fff;
   }
-  font-size: 16px;
+  font-size: 14px;
   background-color: #fff;
 }
 
 .modal__textarea {
   width: 100%;
   height: 120px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   border: 1px solid #ffa5ba;
@@ -174,18 +187,27 @@
 /* check */
 .check {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    font-size: 22px;
+    line-height: 1.7;
+  }
 }
 
-.check__label {
+.check__title {
   display: flex;
   font-size: 20px;
   line-height: 1.17;
   align-items: center;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.7;
+  }
   @media screen and (min-width: 1200px) {
-    font-size: 14px;
+    font-size: 24px;
     line-height: 1.7;
   }
   cursor: pointer;
@@ -194,20 +216,34 @@
 }
 
 .check__item__label {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.17;
   align-items: center;
   color: #d41443;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.check__item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .check__item:not(:last-child) {
   margin-bottom: 10px;
 }
+.number {
+  margin-left: 20px;
+}
 
 .check__box {
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #212121;
   border-radius: 3px;
   margin-right: 7px;
@@ -216,6 +252,10 @@
   &:hover,
   &:focus {
     color: #d41443;
+  }
+  @media screen and (min-width: 768px) {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -228,9 +268,19 @@
   background-origin: border-box;
 }
 
-.modal__btn {
-  color: #fff;
-  background-color: #d41443;
+// .check__input hidden .modal__btn {
+//   color: #fff;
+//   background-color: #d41443;
+// }
+.number__input {
+  background-color: transparent;
+}
+
+.pic {
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  padding-bottom: 8px;
 }
 
 // .checkbox__link {

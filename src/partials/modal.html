@@ -11,7 +11,7 @@
         <section class="gallery-ice">        
             <ul class="gallery-ice-list">
                 <li class="gallery-ice-item ice-cream">
-                    <picture>
+                    <picture class="">
                         <source
                         srcset="
                             ./images/products-1-pc-1x-min.png 1x,
@@ -36,26 +36,28 @@
                         <img src="./images/products-1-pc-1x-min.png" alt="ice cream" width="200"
                   height="200"/>
                     </picture>                    
-                    <div class="check">
-                        <label class="check__label">
-                        <input class="check__input hidden" type="checkbox" name="product"/>
-                        <span class="check__box"></span>
-                        <span class="">ice cream</span>
-                        </label>
-                   
-                       <ul class="check__list ">
+                    <div class="check">                                         
+                        <h1 class="check__title">ice cream</h1>                    
+                        <ul class="check__list ">
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">vanilla</span>
                         </label>
-                        </li>                    
+                        <label class="number">  
+                            <input class="number__input" type="number" name="weight" min="1" max="20" value="0" />
+                        </label>
+                        </li>                       
+                                                
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">mint</span>
+                        </label>
+                        <label class="number">  
+                            <input class="number__input" type="number" name="weight" min="1" max="20" value="0" />
                         </label>
                         </li>
                         <li class="check__item">
@@ -63,6 +65,9 @@
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">strawberry</span>
+                        </label>
+                        <label class="number">  
+                            <input class="number__input" type="number" name="weight" min="1" max="20" value="0" />
                         </label>
                         </li>
                       </ul>
@@ -94,12 +99,8 @@
                         <img src="./images/products-2-pc-1x-min.png" alt="ice coffee" width="200"
                   height="200"/>
                     </picture>
-                    <div class="check">
-                        <label class="check__label">
-                        <input class="check__input hidden" type="checkbox" name="product" />
-                        <span class="check__box"></span>
-                        <span class="">ice coffee</span>
-                        </label>
+                    <div class="check">                       
+                        <h1 class="check__title">ice coffee</h1>                       
                         <ul class="check__list">
                         <li class="check__item">
                         <label class="check__item__label">
@@ -153,11 +154,7 @@
                   height="200"/>
                     </picture>                  
                     <div class="check">
-                        <label class="check__label">
-                        <input class="check__input hidden" type="checkbox" name="product"/>
-                        <span class="check__box"></span>
-                        <span class="">milkshakes</span>
-                        </label>
+                        <h1 class="check__title">milkshakes</h1>                         
                         <ul class="check__list">
                         <li class="check__item">
                         <label class="check__item__label">
