@@ -85,10 +85,10 @@
   flex-direction: column;
 }
 
-.gallery__image:hover {
+.gallery__item .gallery__image:hover {
   transform: scale(1.3);
-  transition-duration: 350ms;
-  transition-timing-function: ease-out;
+  transition-duration: 250ms;
+  z-index: 1;
   @include mob-only {
     transform: scale(1.5);
   }
