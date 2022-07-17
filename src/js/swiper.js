@@ -9,8 +9,7 @@ var swiper = new Swiper('.swiper-container', {
   pauseOnMouseEnter: true,
   loop: true,
   paginationClickable: true,
-  // observer: true,
-  // observeParents: true,
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

@@ -10,6 +10,9 @@ footer {
   width: 250px;
   text-align: left;
   margin-bottom: 40px;
+  @include pc-only {
+    margin-bottom: 0;
+  }
 }
 
 .footer__slogan--light {
@@ -18,6 +21,19 @@ footer {
   text-transform: uppercase;
   color: #ffa5ba;
   margin-bottom: 16px;
+  @include tab-pc {
+    font-size: 26px;
+    line-height: calc(30 / 24);
+    letter-spacing: 0.04em;
+    width: 340px;
+    margin-bottom: 12px;
+  }
+  @include pc-only {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 16px;
+    width: 472px;
+  }
 }
 
 .footer__slogan--dark {
@@ -26,6 +42,17 @@ footer {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  @include tab-pc {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    letter-spacing: 0.06em;
+  }
+  @include pc-only {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    width: 480px;
+  }
 }
 
 .footer-socials__list {
@@ -33,20 +60,55 @@ footer {
   justify-content: end;
   gap: 28.24px;
   margin-bottom: 40px;
+  @include tab-pc {
+    gap: 30px;
+  }
+}
+
+.footer-socials__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.footer-socials__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fea5bb;
+}
+
+.footer-socials__icon {
+  fill: #ffffff;
+}
+
+.footer-socials__link:hover,
+.footer-socials__link:focus {
+  background-color: #d41443;
+}
+
+.footer-socials__link:hover .footer-socials__icon,
+.footer-socials__link:focus .footer-socials__icon {
+  fill: #ffffff;
 }
 
 .footer-contact {
   color: #000000;
+  display: flex;
+  justify-content: end;
 }
 .footer-contact__tel {
   color: #d41443;
 }
 
 .footer-copyright {
-  position: absolute;
   padding-top: 16px;
   border-top: #e1e1e1 1px solid;
-  width: 100%;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -54,4 +116,40 @@ footer {
   line-height: calc(21 / 14);
   text-align: center;
   color: #907e82;
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  @include tab-pc {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@include tab-pc {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__left {
+    display: flex;
+  }
+  .footer__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .is__string {
+    display: none;
+  }
+}
+@include pc-only {
+  .footer__left {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .footer__right {
+    justify-content: end;
+    margin-bottom: 60px;
+  }
 }
