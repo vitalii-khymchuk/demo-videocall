@@ -1,12 +1,14 @@
 .header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
   position: absolute;
   top: 8px;
   left: 0px;
   z-index: 3;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   @include mob-only {
     width: calc(100% - 40px);
@@ -14,18 +16,15 @@
   }
 
   @include tab-pc {
-    position: fixed;
+    position: sticky;
+    margin: 0 auto;
     z-index: 3;
-    top: 37px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1168px;
+    top: 0px;
+    left: 0;
 
-    border-radius: 20px;
-    background-color: rgba(255, 165, 186, 0.5);
+    background-color: #ffb8ca;
     @include tab-only {
-      width: 704px;
-      top: 32px;
+      top: 0;
     }
   }
 }
