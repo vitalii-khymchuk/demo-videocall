@@ -122,14 +122,10 @@
 }
 
 .swiper-container {
-  display: flex;
-  flex-wrap: wrap;
   overflow: hidden;
 }
 
 .swiper-wrapper {
-  display: flex;
-  // flex-direction: row;
   margin-bottom: 16px;
 }
 
@@ -139,13 +135,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8px;
+  padding-top: 18px;
 
   &::after {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 94px;
+    bottom: 74px;
     width: 32px;
     height: 4px;
     transform: translateX(-50%);
@@ -153,10 +149,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     @include tab-pc {
-      bottom: 102px;
+      bottom: 82px;
     }
     @include pc-only {
-      bottom: 86px;
+      bottom: 88px;
     }
   }
 }
