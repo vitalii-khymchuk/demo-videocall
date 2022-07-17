@@ -1,1 +1,67 @@
-закинь код сюди
+<section class="about" id="about">
+  <div class="container about-container">
+    <p class="about__label top--text" data-aos="fade-down">
+      Tradition and love
+    </p>
+    <h2 class="title" data-aos="fade-up">How it's made?</h2>
+    <div class="about__content">
+      <div class="about__image">
+        <picture>
+          <source
+            srcset="
+              ./images/how-it-made-1-mob-1x-min.png 1x,
+              ./images/how-it-made-1-mob-2x-min.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./images/how-it-made-img-tab-1x-min.png 1x,
+              ./images/how-it-made-img-tab-2x-min.png 2x
+            "
+            media="(max-width: 1199px)"
+          />
+          <source
+            srcset="
+              ./images/how-it-made-img-pc-1x-min.png 1x,
+              ./images/how-it-made-img-pc-2x-min.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="about__picture"
+            src="./images/how-it-made-img-pc-2x-min.png"
+            alt="picture of a cow with jar of milk"
+          />
+        </picture>
+      </div>
+      <div class="about__explanation">
+        <p class="about__pre-text text-explanation">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__text text-explanation">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="about__after-text text-explanation">
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+
+        <button
+          class="about__btn btn__bracket"
+          type="button"
+          data-modal-made-open
+        >
+          Read more
+          <svg class="icon__bracket" width="5" height="8">
+            <use href="./images/symbol-defs.svg#icon-bracket"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

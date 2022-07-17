@@ -4,7 +4,22 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
+  position: relative;
 
   background-color: $main-bg-color;
   color: $main-text-color;
+
+  @include tab-pc {
+    padding-top: 32px;
+    background-color: #ffb8ca;
+  }
+
+  @include pc-only {
+    padding-top: 37px;
+  }
+}
+
+section,
+footer {
+  background-color: $main-bg-color;
 }

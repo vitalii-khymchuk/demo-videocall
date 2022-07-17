@@ -95,24 +95,6 @@
         }
       
     }
-<<<<<<< Updated upstream
-    &__second::before {
-        background-image: url(../images/advant/advant-img2.png);
-        width: 50px;
-        @include retina{
-            background-image:url(../images/advant/advant-img2@2x.png);
-        }
-     }
-     &__third::before {
-        background-image: url(../images/advant/advant-img3.png);
-        width: 46px;
-        @include retina{
-            background-image:url(../images/advant/advant-img3@2x.png);
-        }
-     }
-
-=======
-  }
   &__second::before {
     background-image: url(../images/advant/advant-img2.png);
     width: 50px;
@@ -127,6 +109,6 @@
       background-image: url(../images/advant/advant-img3@2x.png);
     }
   }
->>>>>>> Stashed changes
+
 }
 

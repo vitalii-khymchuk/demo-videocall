@@ -6,6 +6,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $sub-title-color;
+
   @include tab-only {
     font-size: 26px;
     line-height: 1.15px;
