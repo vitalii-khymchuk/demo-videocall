@@ -1,13 +1,13 @@
-.header-hero {
+.hero {
   background-color: #ffb8ca;
   position: relative;
   z-index: 0;
   overflow: hidden;
 }
 
-.header-hero__container {
+.hero__container {
   position: relative;
-  padding-top: 8px;
+  padding-top: 194px;
   padding-bottom: 158px;
   overflow: visible;
   @include tab-only {
@@ -20,77 +20,8 @@
   }
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @include tab-pc {
-    position: fixed;
-    top: 37px;
-    width: 1168px;
-
-    border-radius: 20px;
-    background-color: rgba(255, 165, 186, 0.5);
-    @include tab-only {
-      width: 704px;
-      top: 32px;
-    }
-  }
-}
-
-.logo__svg {
-  max-width: 199px;
-  max-height: 50px;
-}
-
-.nav {
-  display: none;
-
-  @include pc-only {
-    display: block;
-  }
-}
-
-.header__list {
-  display: flex;
-}
-.header__item:not(:last-child) {
-  margin-right: 35px;
-}
-.header__link {
-  padding-top: 14px;
-  padding-bottom: 14px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28;
-
-  color: $extra-text-color;
-
-  &:hover,
-  &:focus {
-    color: rgba(212, 20, 67, 1);
-  }
-}
-
-.header__buttons {
-  display: flex;
-}
-
-.header__btn {
-  display: none;
-  @include tab-pc {
-    display: block;
-    width: 160px;
-    height: 44px;
-    margin-left: 32px;
-  }
-}
-
 .title.hero__title {
   text-align: left;
-  margin-top: 136px;
   margin-bottom: 20px;
   width: 218px;
 
