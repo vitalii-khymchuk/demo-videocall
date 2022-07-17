@@ -7,15 +7,15 @@
 
 .hero__container {
   position: relative;
-  padding-top: 194px;
+  padding-top: 20px;
   padding-bottom: 158px;
   overflow: visible;
   @include tab-only {
-    padding-top: 70px;
+    padding-top: 20px;
     padding-bottom: 190px;
   }
   @include pc-only {
-    padding-top: 110px;
+    padding-top: 60px;
     padding-bottom: 316px;
   }
 }
@@ -97,13 +97,13 @@
 
   @include tab-only {
     left: 415px;
-    top: 11px;
+    top: -40px;
 
     width: 335px;
     height: 333px;
   }
   @include pc-only {
-    top: 17px;
+    top: -37px;
     left: 784px;
 
     width: 534px;
@@ -136,10 +136,10 @@
     display: block;
     position: absolute;
     right: 51px;
-    top: 55px;
+    top: 16px;
   }
   @include pc-only {
-    top: 115px;
+    top: 68px;
     right: 35px;
   }
 }
