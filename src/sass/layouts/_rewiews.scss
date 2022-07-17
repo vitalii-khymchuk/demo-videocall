@@ -1,7 +1,6 @@
 .customer-reviews {
   padding-top: 30px;
   padding-bottom: 30px;
-
   @include tab-pc {
     padding-top: 35px;
     padding-bottom: 40px;
@@ -18,6 +17,7 @@
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -122,12 +122,10 @@
 }
 
 .swiper-container {
-  display: flex;
   overflow: hidden;
 }
 
 .swiper-wrapper {
-  display: flex;
   margin-bottom: 16px;
 }
 
@@ -137,13 +135,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8px;
+  padding-top: 18px;
 
   &::after {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 94px;
+    bottom: 74px;
     width: 32px;
     height: 4px;
     transform: translateX(-50%);
@@ -151,10 +149,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     @include tab-pc {
-      bottom: 102px;
+      bottom: 82px;
     }
     @include pc-only {
-      bottom: 118px;
+      bottom: 88px;
     }
   }
 }
@@ -162,6 +160,11 @@
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+.swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 12px;
 }
 
 .swiper-pagination-bullet-active {
