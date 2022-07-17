@@ -3,7 +3,9 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
+
   z-index: 10;
+
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 400ms, visibility 400ms;
@@ -57,10 +59,10 @@
 }
 
 .milkshakes {
-  background-color: #d41443c4;
+  background-color: #d41443a3;
   //   background-color: #aa2d4c84;
   .check__label {
-    color: #a92525;
+    color: #800b0bbf;
   }
 
   .check__item__label {
@@ -148,7 +150,10 @@
   transition: border-color 250ms;
   &:focus {
     border: 1px solid #d41443;
+    background-color: #fff;
   }
+  font-size: 16px;
+  background-color: #fff;
 }
 
 .modal__textarea {

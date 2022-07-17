@@ -1,7 +1,7 @@
 @import './utils/vars';
+@import './utils/mixines';
 @import './base/common';
 @import './base/base';
-@import './utils/mixines';
 
 @import './components/container';
 @import './components/buttons';
@@ -19,3 +19,4 @@
 @import './layouts/footer';
 @import './layouts/modal';
 @import './layouts/mobile-menu';
+@import './layouts/modal-made';

@@ -107,6 +107,7 @@ footer {
 }
 
 .footer-copyright {
+  width: 100vw;
   padding-top: 16px;
   border-top: #e1e1e1 1px solid;
   font-family: 'DM Sans';
@@ -116,9 +117,11 @@ footer {
   line-height: calc(21 / 14);
   text-align: center;
   color: #907e82;
+
   position: absolute;
   width: 100%;
   left: 0%;
+  background-color: #fff5f6;
   @include tab-pc {
     padding-top: 8px;
     padding-bottom: 8px;
