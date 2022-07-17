@@ -1,7 +1,6 @@
 .customer-reviews {
   padding-top: 30px;
   padding-bottom: 30px;
-
   @include tab-pc {
     padding-top: 35px;
     padding-bottom: 40px;
@@ -129,6 +128,7 @@
 
 .swiper-wrapper {
   display: flex;
+  flex-direction: row;
   margin-bottom: 16px;
 }
 
@@ -169,6 +169,7 @@
 .swiper-pagination-bullet + .swiper-pagination-bullet {
   margin-left: 12px;
 }
+
 .swiper-pagination-bullet-active {
   width: 14px;
   height: 12px;

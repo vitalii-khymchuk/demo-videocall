@@ -15,20 +15,8 @@ body {
     }
 }
 
-.container__contacts {
-    padding-bottom: 113px;
-
-    @include tab-pc {
-        padding-bottom: 158px;
-    }
-
-    @include pc-only {
-        padding-bottom: 165px;
-    }
-
-}
-
 .contacts {
+
     background-image: linear-gradient(rgba(255, 245, 246, 1), rgba(255, 245, 246, 1));
     background-position: right 0px top 84px;
 
@@ -38,14 +26,17 @@ body {
 
     @include mob-only {
         background-position: right 0px top 302px;
+        padding-bottom: 40px;
     }
 
     @include tab-only {
         background-position: right 0px top 298px;
+        padding-bottom: 40px;
     }
 
     @include pc-only {
-        background-position: right 0px top 102px;
+        background-position: right 0px top 99px;
+        padding-bottom: 121px;
     }
 }
 
