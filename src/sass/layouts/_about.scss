@@ -26,7 +26,7 @@
   @include mob-only {
     background-image: url(../images/how-it-made-2-mob-1x-min.png);
     background-repeat: no-repeat;
-    background-position: center 56%;
+    background-position: center 74%;
     background-size: calc(100% - 40px) auto;
     @include retina {
       background-image: url(../images/how-it-made-2-mob-2x-min.png);
@@ -134,6 +134,14 @@
   }
 }
 
+.text-explanation {
+  transform: scale(1);
+  transition: transform 250ms linear;
+  &.not-visible {
+    transform: scale(0);
+  }
+}
+
 .about__after-text {
   font-weight: 500;
   font-size: 12px;
@@ -214,5 +222,45 @@
   &:focus {
     background-color: #ecebeb;
     color: $accent-color;
+  }
+}
+
+.about__video {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  transform: scale(1);
+  transition: transform 250ms linear;
+  &.not-visible {
+    transform: scale(0);
+  }
+}
+
+.video__player {
+  width: 100%;
+}
+
+.video-close-btn {
+  &.modal-close {
+    top: -5px;
+    right: 0;
+  }
+}
+
+.video__title {
+  margin-bottom: 8px;
+
+  font-family: 'Titan One';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $title-color;
+  @include tab-only {
+    font-size: 18px;
+  }
+  @include pc-only {
+    font-size: 24px;
   }
 }
