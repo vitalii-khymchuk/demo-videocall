@@ -254,3 +254,9 @@
     bottom: 91px;
   }
 }
+
+.right-side__list .right-side__item:hover,
+.right-side__list .right-side__item:focus {
+  transition-duration: 350ms;
+  transform: scale(1.3);
+}

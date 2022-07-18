@@ -3,76 +3,55 @@
   padding-top: 60px;
   padding-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @include tab-pc {
     padding-top: 60px;
     padding-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include pc-only {
     background-image: url(../images/how-it-made-bg-pc-1x-min.png);
     background-repeat: no-repeat;
     background-position: center 97%;
     background-size: contain;
     padding-left: 0;
     padding-right: 0;
-    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: url(../images/how-it-made-bg-pc-2x-min.png);
     }
-  }
-
-  &__label {
-    // font-family: 'Titan One', sans-serif;
-    // font-weight: 400;
-    // font-size: 18px;
-    // line-height: 1.16;
-    // text-align: center;
-    // text-transform: uppercase;
-    // color: $sub-title-color;
-    margin-bottom: 15px;
   }
 }
 
 .about-container {
-  @media screen and (max-width: 767px) {
+  @include mob-only {
     background-image: url(../images/how-it-made-2-mob-1x-min.png);
     background-repeat: no-repeat;
-    background-position: center 77%;
-    max-width: 280px;
-    padding-left: 0;
-    padding-right: 0;
-    background-size: contain;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    background-position: center 56%;
+    background-size: calc(100% - 40px) auto;
+    @include retina {
       background-image: url(../images/how-it-made-2-mob-2x-min.png);
     }
   }
 
-  @media screen and (min-width: 767px) {
+  @include tab-pc {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 
-.title {
-  // font-family: 'Titan One', sans-serif;
-  // font-weight: 400;
-  // font-size: 34px;
-  // line-height: 1.14;
-  // text-align: center;
-  // letter-spacing: 0.04em;
-  // text-transform: uppercase;
-  // color: $title-color;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 0;
-    margin-bottom: 30px;
+.about__label {
+  margin-bottom: 15px;
+  @include tab-pc {
+    margin-bottom: 16px;
   }
-  @media screen and (min-width: 1200px) {
-    padding: 0;
-    margin-bottom: 0;
+}
+
+.about__title {
+  margin-bottom: 32px;
+  @include tab-only {
+    margin-bottom: 40px;
+  }
+  @include pc-only {
+    margin-bottom: 60px;
   }
 }
 
@@ -81,53 +60,30 @@
   flex-direction: column;
   justify-content: start;
 
-  @media screen and (min-width: 768px) {
+  @include tab-pc {
     flex-direction: row;
     gap: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include pc-only {
     gap: 100px;
     align-items: center;
     margin-top: 60px;
   }
 }
 
-.about__image {
-  &__picture {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-bottom: 40px;
-  }
+.about__image__picture {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) and (max-width: 1099px) {
+  @include tab-only {
     margin-bottom: 56px;
     margin-right: 17px;
     width: 340px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include pc-only {
     margin-right: 33px;
-    width: 463px;
-  }
-}
-
-.about__explanation {
-  /*margin-left: 30px;
-    margin-right: 30px;*/
-
-  @media screen and (min-width: 768px) {
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 50px;
-    width: 340px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 50px;
     width: 463px;
   }
 }
@@ -140,11 +96,11 @@
   color: $secondary-text-color;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @include tab-only {
     font-size: 14px;
     line-height: 1.79;
   }
-  @media screen and (min-width: 1200px) {
+  @include pc-only {
     font-size: 16px;
     line-height: 1.94;
     letter-spacing: 0.04em;
@@ -159,11 +115,11 @@
   color: $main-text-color;
   margin-bottom: 17px;
 
-  @media screen and (min-width: 768px) {
+  @include tab-only {
     font-size: 14px;
     line-height: 1.79;
   }
-  @media screen and (min-width: 1200px) {
+  @include pc-only {
     font-size: 14px;
     line-height: 1.94;
     margin-bottom: 35px;
@@ -177,26 +133,28 @@
   color: $main-text-color;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @include tab-only {
     font-size: 14px;
     line-height: 1.79;
     margin-bottom: 40px;
   }
-  @media screen and (min-width: 1200px) {
+  @include pc-only {
     font-size: 14px;
     line-height: 1.94;
     margin-bottom: 45px;
   }
 }
 
-.text-explanation {
-  max-width: 220px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 334px;
+.about__explanation {
+  @include mob-only {
+    width: 220px;
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 463px;
+  @include tab-pc {
+    padding-top: 50px;
+    width: 334px;
+    @include pc-only {
+      width: 463px;
+    }
   }
 }
 
@@ -230,7 +188,7 @@
   padding-left: 37px;
   padding-right: 37px;
 
-  @media screen and (min-width: 768px) {
+  @include tab-pc {
     font-size: 16px;
   }
 }
