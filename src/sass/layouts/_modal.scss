@@ -3,9 +3,7 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-
   z-index: 10;
-
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 400ms, visibility 400ms;
@@ -31,7 +29,7 @@
   left: 50%;
   transition: transform 500ms;
   transform: translate(-50%, -50%) scale(1) rotate(0);
-  padding: 25px;
+  padding: 10px 20px;
   //   @media screen and (min-width: 1200px) {
   //     max-width: 528px;
   //     max-height: 581px;
@@ -39,16 +37,20 @@
 }
 
 .price {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
-// .gallery-ice-list {
-// }
-
-.gallery-ice-item {
-  padding: 18px;
-  @media screen and (min-width: 480px) {
+.gallery-ice-list {
+  @media screen and (min-width: 768px) {
     display: flex;
+  }
+}
+
+.gallery-ice__item {
+  display: flex;
+  padding: 8px;
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
     padding: 20px;
@@ -78,16 +80,16 @@
 .modal-close {
   fill: currentColor;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background-color: #d41443;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   cursor: pointer;
-  padding: 4px;
+  padding: 2px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -105,11 +107,11 @@
   font-family: 'Titan One';
   color: $title-color;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
@@ -120,7 +122,7 @@
 
 .modal__wrap {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .modal__icon {
@@ -138,7 +140,7 @@
 }
 
 .modal__label {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #d41443;
@@ -155,9 +157,9 @@
 
 .modal__input {
   width: 100%;
-  height: 40px;
+  height: 26px;
   border: 1px solid #ffa5ba;
-  border-radius: 15px;
+  border-radius: 10px;
   padding-left: 15px;
   outline: none;
   transition: border-color 250ms;
@@ -169,22 +171,22 @@
   background-color: #fff;
 }
 
-.modal__textarea {
-  width: 100%;
-  height: 120px;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  border: 1px solid #ffa5ba;
-  border-radius: 20px;
-  padding: 12px 16px;
-  resize: none;
-  outline: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus {
-    border: 1px solid#d41443;
-  }
-}
+// .modal__textarea {
+//   width: 100%;
+//   height: 70px;
+//   font-size: 14px;
+//   line-height: 1.17;
+//   letter-spacing: 0.01em;
+//   border: 1px solid #ffa5ba;
+//   border-radius: 20px;
+//   padding: 8px 16px;
+//   resize: none;
+//   outline: none;
+//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:focus {
+//     border: 1px solid#d41443;
+//   }
+// }
 
 /* check */
 .check {
@@ -200,13 +202,14 @@
 
 .check__title {
   display: flex;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.17;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   @media screen and (min-width: 768px) {
     font-size: 22px;
     line-height: 1.7;
+    margin-right: 10px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 24px;
@@ -218,7 +221,7 @@
 }
 
 .check__item__label {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.17;
   align-items: center;
   color: #d41443;
@@ -233,13 +236,26 @@
 .check__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .check__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 .number {
   margin-left: 20px;
+}
+
+.gallery-ice__img {
+  margin: auto;
+}
+
+.number__input {
+  background-color: transparent;
+  width: 40px;
+  height: 18px;
+  font-size: 14px;
+  border-radius: 6px;
 }
 
 .check__box {
@@ -274,15 +290,28 @@
 //   color: #fff;
 //   background-color: #d41443;
 // }
-.number__input {
-  background-color: transparent;
-}
 
 .pic {
   display: flex;
   align-content: stretch;
   justify-content: center;
   padding-bottom: 8px;
+}
+
+.modal__btn {
+  width: 140px;
+  height: 34px;
+  margin: auto;
+  color: #d41443;
+  background-color: #fff;
+  // margin-bottom: 20px;
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  background-color: #d41443;
+  color: #fff;
+  cursor: pointer;
 }
 
 // .checkbox__link {
