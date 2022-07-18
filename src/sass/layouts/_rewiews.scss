@@ -135,7 +135,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 18px;
+  padding-top: 0px;
 
   &::after {
     content: '';
@@ -150,10 +150,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     @include tab-pc {
-      bottom: 68px;
+      bottom: 48px;
     }
     @include pc-only {
-      bottom: 72px;
+      bottom: 52px;
     }
   }
 }
