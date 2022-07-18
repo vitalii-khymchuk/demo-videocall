@@ -227,23 +227,45 @@
 
 .about__video {
   position: absolute;
-  top: 450px;
+  top: 490px;
   left: 0;
   transform: scale(1);
   transition: transform 250ms linear;
   &.not-visible {
     transform: scale(0);
   }
+  @include tab-only {
+    top: 170px;
+    left: auto;
+    right: 32px;
+  }
+  @include pc-only {
+    top: 220px;
+    left: auto;
+    right: 60px;
+  }
 }
 
 .video__player {
   width: 100%;
+  height: 170px;
+  @include tab-only {
+    width: 334px;
+    height: 190px;
+  }
+  @include pc-only {
+    width: 500px;
+    height: 285px;
+  }
 }
 
 .video-close-btn {
   &.modal-close {
     top: -5px;
     right: 0;
+    @include tab-pc {
+      top: -20px;
+    }
   }
 }
 
