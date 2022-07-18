@@ -2,6 +2,7 @@
   background: $secondary-bg-color;
   padding-top: 60px;
   padding-bottom: 20px;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
@@ -116,6 +117,7 @@
 .about__explanation {
   /*margin-left: 30px;
     margin-right: 30px;*/
+position: relative;
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
@@ -213,7 +215,10 @@
   &:focus {
     background-color: #ecebeb;
     color: $accent-color;
-  }
+    }
+    &:hover.text-explanation{
+      display: none;
+    }
 
   &--inv {
     background-color: $title-color;

@@ -1,0 +1,49 @@
+.video{
+    display: none;
+    width: 100%;
+    top:30%;
+    position: absolute;
+   
+     @include tab-only {
+      width: 334px;
+      
+    }
+    @include pc-only {
+      width: 463px;
+    } 
+ &__made{
+    width: 100%;
+ }
+
+    
+    &__title{
+      @include tab-only{
+         font-size: 18px;
+         }
+     @include pc-only {
+        font-size: 24px;
+      
+      }
+ 
+      text-align: center;
+      font-family: "Titan One";
+      line-height: 1.5;
+      color: $title-color;
+      font-weight: 500;
+      margin-bottom: 8px; 
+      letter-spacing: .03em;
+      font-size: 12px;
+   
+  }
+  &__close{
+  @include mob-only {
+    width: 10px;
+    height: 10px;
+}
+}
+}
+ .modal-close.clip{
+ top:5px;
+  left:100%;
+
+}
