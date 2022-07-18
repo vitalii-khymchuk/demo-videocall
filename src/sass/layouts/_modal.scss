@@ -30,30 +30,41 @@
   transition: transform 500ms;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   padding: 10px 20px;
-  //   @media screen and (min-width: 1200px) {
-  //     max-width: 528px;
-  //     max-height: 581px;
-  //   }
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: 480px) {
+    padding: 20px 20px;
+    height: 450px;
+  }
 
-.price {
-  padding-bottom: 10px;
-}
-
-.gallery-ice-list {
   @media screen and (min-width: 768px) {
+    max-width: 550px;
+  }
+}
+
+// .price {
+//   padding-bottom: 10px;
+// }
+
+.gallery-ice__list {
+  @media screen and (min-width: 480px) {
     display: flex;
   }
 }
 
 .gallery-ice__item {
   display: flex;
-  padding: 8px;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 6px;
+
   @media screen and (min-width: 480px) {
     flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -123,6 +134,11 @@
 .modal__wrap {
   position: relative;
   margin-bottom: 8px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12px;
+  }
 }
 
 .modal__icon {
@@ -144,14 +160,15 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #d41443;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   display: block;
   margin-left: 10px;
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-around;
   }
-  @media screen and (min-width: 1200px) {
-    font-size: 18px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
 }
 
@@ -169,6 +186,10 @@
   }
   font-size: 14px;
   background-color: #fff;
+  @media screen and (min-width: 480px) {
+    width: 250px;
+    height: 28px;
+  }
 }
 
 // .modal__textarea {
@@ -206,13 +227,17 @@
   line-height: 1.17;
   align-items: center;
   margin-bottom: 8px;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 22px;
-    line-height: 1.7;
     margin-right: 10px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.7;
   }
   cursor: pointer;
@@ -226,10 +251,10 @@
   align-items: center;
   color: #d41443;
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -302,15 +327,15 @@
   width: 140px;
   height: 34px;
   margin: auto;
-  color: #d41443;
-  background-color: #fff;
+  color: #fff;
+  background-color: #d41443;
   // margin-bottom: 20px;
 }
 
 .modal__btn:hover,
 .modal__btn:focus {
-  background-color: #d41443;
-  color: #fff;
+  color: #d41443;
+  background-color: #e1e1e1;
   cursor: pointer;
 }
 
