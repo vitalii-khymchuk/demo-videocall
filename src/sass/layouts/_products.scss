@@ -286,6 +286,9 @@
 
 .products__des.not-visible {
   transform: translateX(250px) scaleX(0);
+  opacity: 0;
+  pointer-events: none;
+  visibility: inherit;
 }
 
 .products__des {
@@ -332,12 +335,6 @@
     width: 370px;
     height: 535px;
   }
-}
-
-.not-visible {
-  opacity: 0;
-  pointer-events: none;
-  visibility: inherit;
 }
 
 .products__des-text {
