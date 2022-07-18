@@ -82,8 +82,7 @@
     <div class="button-section">
       <button
         type="button"
-        class="button-section__itam--red btn-keyframe"
-        locations-modal-open
+        class="button-section__itam--red btn-keyframe locmodal-open-btn"
       >
         Our Locations
         <svg width="12" height="10">
@@ -91,7 +90,11 @@
         </svg>
       </button>
 
-      <button type="button" class="button-section__itam--white btn-keyframe">
+      <button
+        type="button"
+        class="button-section__itam--white btn-keyframe"
+        data-modal-franchise-open
+      >
         Franchise
         <svg width="12" height="10">
           <use href="./images/symbol-defs.svg#icon-red"></use>

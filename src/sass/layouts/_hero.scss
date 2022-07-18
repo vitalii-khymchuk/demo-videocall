@@ -7,7 +7,7 @@
 
 .hero__container {
   position: relative;
-  padding-top: 20px;
+  padding-top: 194px;
   padding-bottom: 158px;
   overflow: visible;
   @include tab-only {
@@ -28,11 +28,14 @@
   font-size: 48px;
   line-height: 96.5%;
   @include tab-only {
+    margin-top: 0px;
+
     font-size: 34px;
     line-height: 90.5%;
   }
   @include pc-only {
     width: 277px;
+    margin-top: 0px;
     font-size: 58px;
     line-height: 90.5%;
   }
@@ -97,7 +100,7 @@
 
   @include tab-only {
     left: 415px;
-    top: -40px;
+    top: -43px;
 
     width: 335px;
     height: 333px;
@@ -241,7 +244,7 @@
   }
 }
 
-.hero-bg__bottom-img {
+.hero-bg__bottom {
   display: none;
   @include tab-pc {
     display: block;
@@ -253,4 +256,55 @@
   @include pc-only {
     bottom: 91px;
   }
+}
+
+@keyframes girl-text {
+  0% {
+    transform: translate(100%, 50%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.hero-bg__bottom-cloud {
+  @include tab-pc {
+    overflow: hidden;
+    position: absolute;
+    top: 13;
+    left: 15;
+    width: 85px;
+    height: 51px;
+  }
+  @include pc-only {
+    top: 20px;
+    left: 26px;
+    width: 180px;
+    height: 80px;
+  }
+}
+
+.hero-bg__bottom-text {
+  @include tab-pc {
+    animation-name: girl-text;
+    animation-duration: 350ms;
+    animation-timing-function: linear;
+    animation-delay: 2000ms;
+    animation-fill-mode: backwards;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $accent-color;
+  }
+  @include pc-only {
+    font-size: 22px;
+  }
+}
+
+.right-side__list .right-side__item:hover,
+.right-side__list .right-side__item:focus {
+  transition-duration: 350ms;
+  transform: scale(1.3);
 }
