@@ -9,175 +9,162 @@
         <p class="modal__title">Choose the best</p>
 
         <section class="gallery-ice">        
-            <ul class="gallery-ice-list">
-                <li class="gallery-ice-item ice-cream">
-                    <picture>
+            <ul class="gallery-ice__list">
+                <li class="gallery-ice__item ice-cream">
+                    <picture class="gallery-ice__img">
                         <source
                         srcset="
                             ./images/products-1-pc-1x-min.png 1x,
                             ./images/products-1-pc-2x-min.png 2x
                         "
-                        media="(min-width:1200px)"
+                        media="(min-width:1200px)" width="80" height="80"
                         />
                         <source
                         srcset="
                             ./images/products-1-tab-1x-min.png 1x,
                             ./images/products-1-tab-2x-min.png 2x
                         "
-                        media="(min-width:768px)"
+                        media="(min-width:768px)" width="80" height="80"
                         />
                         <source
                         srcset="
                             ./images/products-1-mob-1x-min.png 1x,
                             ./images/products-1-mob-2x-min.png 2x
                         "
-                        media="(max-width:767px)"
+                        media="(max-width:767px)" width="80" height="80"
                         />
-                        <img src="./images/products-1-pc-1x-min.png" alt="ice cream" width="200"
-                  height="200"/>
+                        <img src="./images/products-1-pc-1x-min.png" alt="ice cream" width="80"
+                  height="80"/>
                     </picture>                    
-                    <div class="check">
-                        <label class="check__label">
-                        <input class="check__input hidden" type="checkbox" name="product"/>
-                        <span class="check__box"></span>
-                        <span class="">ice cream</span>
-                        </label>
-                   
-                       <ul class="check__list ">
+                    <div class="check">                                         
+                        <h1 class="check__title">ice cream</h1>                    
+                        <ul class="check__list ">
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">vanilla</span>
-                        </label>
-                        </li>                    
+                        </label>                       
+                        </li>                       
+                                                
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
-                        <span class="">mint</span>
-                        </label>
+                        <span class="">mango</span>
+                        </label>                        
                         </li>
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">strawberry</span>
-                        </label>
+                        </label>                        
                         </li>
                       </ul>
                      </div>
                 </li>
-                <li class="gallery-ice-item ice-coffee">
-                    <picture>
+                <li class="gallery-ice__item ice-coffee">
+                   <picture class="gallery-ice__img">
                         <source
                         srcset="
                             ./images/products-2-pc-1x-min.png 1x,
                             ./images/products-2-pc-2x-min.png 2x
                         "
-                        media="(min-width:1200px)"
+                        media="(min-width:1200px)" width="80" height="80"
                         />
                         <source
                         srcset="
                             ./images/products-2-tab-1x-min.png 1x,
                             ./images/products-2-tab-2x-min.png 2x
                         "
-                        media="(min-width:768px)"
+                        media="(min-width:768px)" width="80" height="80"
                         />
                         <source
                         srcset="
                             ./images/products-2-mob-1x-min.png 1x,
                             ./images/products-2-mob-2x-min.png 2x
                         "
-                        media="(max-width:767px)"
+                        media="(max-width:767px)" width="80" height="80"
                         />
-                        <img src="./images/products-2-pc-1x-min.png" alt="ice coffee" width="200"
-                  height="200"/>
+                        <img src="./images/products-2-pc-1x-min.png" alt="ice coffee" width="80" height="80"/>
                     </picture>
-                    <div class="check">
-                        <label class="check__label">
-                        <input class="check__input hidden" type="checkbox" name="product" />
-                        <span class="check__box"></span>
-                        <span class="">ice coffee</span>
-                        </label>
+                    <div class="check">                       
+                        <h1 class="check__title">ice coffee</h1>                       
                         <ul class="check__list">
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">caramel</span>
-                        </label>
+                        </label>                         
                         </li>                    
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">latte</span>
-                        </label>
+                        </label>                         
                         </li>
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">chocolate</span>
-                        </label>
+                        </label>                        
                         </li>
                       </ul>
                     </div>
                 </li>
 
-                <li class="gallery-ice-item milkshakes">
-                    <picture>
+                <li class="gallery-ice__item milkshakes">
+                    <picture class="gallery-ice__img">
                         <source
                         srcset="
                             ./images/products-3-pc-1x-min.png 1x,
                             ./images/products-3-pc-2x-min.png 2x
                         "
-                        media="(min-width:1200px)" 
+                        media="(min-width:1200px)" width="80" height="80"
                         />
                         <source
                         srcset="
                             ./images/products-3-tab-1x-min.png 1x,
                             ./images/products-3-tab-2x-min.png 2x
                         "
-                        media="(min-width:768px)"
+                        media="(min-width:768px)" width="80" height="80"
                         />
                         <source
                         srcset="
                             ./images/products-3-mob-1x-min.png 1x,
                             ./images/products-3-mob-2x-min.png 2x
                         "
-                        media="(max-width:767px)"
+                        media="(max-width:767px)" width="80" height="80"
                         />
-                        <img src="./images/products-3-pc-1x-min.png" alt="milkshakes" width="200"
-                  height="200"/>
+                        <img src="./images/products-3-pc-1x-min.png" alt="milkshakes" width="80"
+                  height="80"/>
                     </picture>                  
                     <div class="check">
-                        <label class="check__label">
-                        <input class="check__input hidden" type="checkbox" name="product"/>
-                        <span class="check__box"></span>
-                        <span class="">milkshakes</span>
-                        </label>
+                        <h1 class="check__title">milkshakes</h1>                         
                         <ul class="check__list">
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">vanilla</span>
-                        </label>
+                        </label>                        
                         </li>                    
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
                         <span class="">blackberry</span>
-                        </label>
+                        </label>                        
                         </li>
                         <li class="check__item">
                         <label class="check__item__label">
                         <input class="check__input hidden" type="checkbox" name="product"/>
                         <span class="check__box"></span>
-                        <span class="">chocolate</span>
+                        <span class="">chocolate</span>                         
                         </label>
                         </li>
                       </ul>
@@ -201,25 +188,10 @@
           <label class="modal__label" for="user-name">Telephone</label>
           <div class="modal__wrap">
             <input type="text" class="modal__input" name="user-tel" required />
-          </div>
-          <label class="modal__label" for="user-name">Mail</label>
-          <div class="modal__wrap">
-            <input type="text" class="modal__input" name="user-email" />
-          </div>
-          <label class="modal__label" for="comment">Comment</label>
-          <div class="modal__wrap">
-            <textarea
-              class="modal__textarea"
-              name="comment"
-              id="comment"
-              placeholder="Your wishes"
-            ></textarea>
-          </div>
-          
-          <div class="mobile-menu__btn-wrapper"></div>
-            <button type="submit" class="btn modal__btn">
+          </div>                    
+          <button type="submit" class="btn modal__btn btn-keyframe">
             Buy now
-            </button>
+          </button>
           </div>
         </form>
     </div>

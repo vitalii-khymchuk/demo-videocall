@@ -1,5 +1,7 @@
 @import './utils/vars';
 @import './utils/mixines';
+@import './utils/hidden';
+
 @import './base/common';
 @import './base/base';
 
@@ -7,9 +9,9 @@
 @import './components/buttons';
 @import './components/title';
 @import './components/modal-location';
+@import './components/swiper';
 
 @import './layouts/header';
-@import './utils/hidden';
 @import './layouts/hero';
 @import './layouts/products';
 @import './layouts/about';
@@ -20,4 +22,4 @@
 @import './layouts/footer';
 @import './layouts/modal';
 @import './layouts/mobile-menu';
-@import './layouts/modal-made';
+@import './layouts/about-video';

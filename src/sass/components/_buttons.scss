@@ -2,7 +2,7 @@
   display: block;
   width: 159px;
   height: 44px;
-  border-radius: 999px;
+  border-radius: 50px;
   @include flex-center;
   border: none;
 
@@ -60,5 +60,34 @@
   &:hover,
   &:focus {
     background-color: $sub-title-color;
+  }
+}
+
+.btn-keyframe {
+  animation: wiggle 2s linear infinite;
+}
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-6deg);
+  }
+  20% {
+    transform: rotateZ(3deg);
+  }
+  25% {
+    transform: rotateZ(-3deg);
+  }
+  30% {
+    transform: rotateZ(3deg);
+  }
+  35% {
+    transform: rotateZ(-1deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
   }
 }
