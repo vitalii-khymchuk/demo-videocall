@@ -7,7 +7,7 @@
 
 .hero__container {
   position: relative;
-  padding-top: 20px;
+  padding-top: 194px;
   padding-bottom: 158px;
   overflow: visible;
   @include tab-only {
@@ -28,11 +28,14 @@
   font-size: 48px;
   line-height: 96.5%;
   @include tab-only {
+    margin-top: 0px;
+
     font-size: 34px;
     line-height: 90.5%;
   }
   @include pc-only {
     width: 277px;
+    margin-top: 0px;
     font-size: 58px;
     line-height: 90.5%;
   }
@@ -97,7 +100,7 @@
 
   @include tab-only {
     left: 415px;
-    top: -40px;
+    top: -43px;
 
     width: 335px;
     height: 333px;
@@ -253,4 +256,10 @@
   @include pc-only {
     bottom: 91px;
   }
+}
+
+.right-side__list .right-side__item:hover,
+.right-side__list .right-side__item:focus {
+  transition-duration: 350ms;
+  transform: scale(1.3);
 }

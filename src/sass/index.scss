@@ -4,6 +4,7 @@
 
 @import './base/common';
 @import './base/base';
+@import './utils/hidden';
 
 @import './components/container';
 @import './components/buttons';
@@ -22,4 +23,3 @@
 @import './layouts/footer';
 @import './layouts/modal';
 @import './layouts/mobile-menu';
-@import './layouts/about-video';
