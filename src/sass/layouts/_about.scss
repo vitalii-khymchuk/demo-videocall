@@ -2,6 +2,7 @@
   background: $secondary-bg-color;
   padding-top: 60px;
   padding-bottom: 20px;
+  position: relative;
 
   @include tab-pc {
     padding-top: 60px;
@@ -53,6 +54,13 @@
   @include pc-only {
     margin-bottom: 60px;
   }
+}
+
+// add by Yurii
+.about-container .title:hover,
+.about-container .title:focus {
+  transition-duration: 350ms;
+  transform: scale(1.2);
 }
 
 .about__content {
@@ -171,6 +179,9 @@
   &:focus {
     background-color: #ecebeb;
     color: $accent-color;
+  }
+  &:hover.text-explanation {
+    display: none;
   }
 
   &--inv {

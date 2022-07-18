@@ -5,95 +5,99 @@
   @include tab-only {
 padding-bottom: 64px;
   }
-  @include pc-only{
+  @include pc-only {
     padding-bottom: 120px;
   }
 
-
-   &__list{
-    @include tab-only{
+  &__list {
+    @include tab-only {
       display: flex;
     }
-    @include pc-only{
-        display: flex;
-      }
-}
-   &__item{
-    @include tab-only{
-        margin-right: 4px;
-        margin-bottom: 0;
-       }
-    @include pc-only{
-        margin-right: 115px;
+    @include pc-only {
+      display: flex;
     }
-    &:last-child{
-        margin-right: 0px;
+  }
+  &__item {
+    @include tab-only {
+      margin-right: 4px;
+      margin-bottom: 0;
+    }
+    @include pc-only {
+      margin-right: 115px;
+    }
+    &:last-child {
+      margin-right: 0px;
     }
     margin-bottom: 32px;
-    &:last-child{
-        margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
     }
     &::before {
-        content: "";
-        display: block;
-        width: 40px;
-        height: 50px;
-        margin-bottom: 16px;
-        background-size: contain;
-        @include tab-only{
-            margin-bottom: 36px;
-        }
-    
+      content: '';
+      display: block;
+      width: 40px;
+      height: 50px;
+      margin-bottom: 16px;
+      background-size: contain;
+      @include tab-only {
+        margin-bottom: 36px;
+      }
     }
-}
-   
-&__number{
-    @include tab-only{
-      font-size: 48px;   
+  }
+
+  &__number {
+    @include tab-only {
+      font-size: 48px;
       margin-bottom: 13px;
     }
-    @include pc-only{
-        font-size: 58px;   
-        margin-bottom: 16px;
-      }
+    @include pc-only {
+      font-size: 58px;
+      margin-bottom: 16px;
+    }
 
-    font-family: "Titan One";
+    font-family: 'Titan One';
     font-weight: 400;
     font-size: 36px;
-    line-height:1.17;
+    line-height: 1.17;
     color: $accent-color;
     margin-bottom: 18px;
-   }
-   
-   &__text{
-    @include tab-only{
-        font-size: 14px;
-        width: 180px;
+  }
+
+  &__text {
+    @include tab-only {
+      font-size: 14px;
+      width: 180px;
     }
-    @include pc-only{
-        font-size: 16px;
-        width: 288px;
+    @include pc-only {
+      font-size: 16px;
+      width: 288px;
+
     }
     width: 230px;
-    font-family: "DM Sans";
+    font-family: 'DM Sans';
     font-weight: 700;
     font-size: 12px;
-    line-height:1.7;
+    line-height: 1.7;
     color: $secondary-text-color;
-    }
-   }
+  }
+}
 
-    
+// add by Yurii
+.advent__list .advent__item:hover,
+.advent__list .advent__item:focus {
+  transition-duration: 350ms;
+  transform: scale(1.2);
+}
+
 .icon {
-    &__first::before {
-        background-image: url(../images/advant/advant-img1.png);
-        background-size: contain;
-        width: 33px;
-        @include retina{
-            background-image:url(../images/advant/advant-img1@2x.png);
-        }
-      
+  &__first::before {
+    background-image: url(../images/advant/advant-img1.png);
+    background-size: contain;
+    width: 33px;
+    @include retina {
+      background-image: url(../images/advant/advant-img1@2x.png);
     }
+  }
   &__second::before {
     background-image: url(../images/advant/advant-img2.png);
     width: 50px;
@@ -108,6 +112,4 @@ padding-bottom: 64px;
       background-image: url(../images/advant/advant-img3@2x.png);
     }
   }
-
 }
-
