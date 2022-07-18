@@ -11,11 +11,11 @@
   padding-bottom: 158px;
   overflow: visible;
   @include tab-only {
-    padding-top: 102px;
+    padding-top: 20px;
     padding-bottom: 190px;
   }
   @include pc-only {
-    padding-top: 147px;
+    padding-top: 60px;
     padding-bottom: 316px;
   }
 }
@@ -100,13 +100,13 @@
 
   @include tab-only {
     left: 415px;
-    top: 43px;
+    top: -43px;
 
     width: 335px;
     height: 333px;
   }
   @include pc-only {
-    top: 54px;
+    top: -37px;
     left: 784px;
 
     width: 534px;
@@ -139,10 +139,10 @@
     display: block;
     position: absolute;
     right: 51px;
-    top: 92px;
+    top: 16px;
   }
   @include pc-only {
-    top: 152px;
+    top: 68px;
     right: 35px;
   }
 }
