@@ -76,6 +76,13 @@
   }
 }
 
+// add by Yurii
+.about-container .title:hover,
+.about-container .title:focus {
+  transition-duration: 350ms;
+  transform: scale(1.2);
+}
+
 .about__content {
   display: flex;
   flex-direction: column;

@@ -19,6 +19,13 @@
   padding-bottom: 8px;
 }
 
+// add by Yurii
+.products .products__title:hover,
+.products .products__title:focus {
+  transition-duration: 350ms;
+  transform: scale(1.2);
+}
+
 .products__list {
   @include tab-only {
     display: flex;
