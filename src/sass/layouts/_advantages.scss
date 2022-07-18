@@ -1,10 +1,9 @@
-
-.advent{
-   background-color: $secondary-bg-color;
-   padding-top: 40px;
-   padding-bottom: 60px;
-   @include tab-only{
-    padding-bottom: 64px;
+.advent {
+  background-color: $secondary-bg-color;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  @include tab-only {
+padding-bottom: 64px;
   }
   @include pc-only{
     padding-bottom: 120px;
@@ -64,7 +63,7 @@
     line-height:1.17;
     color: $accent-color;
     margin-bottom: 18px;
-    }
+   }
    
    &__text{
     @include tab-only{
