@@ -135,7 +135,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 0px;
+  padding-top: 6px;
 
   &::after {
     content: '';
@@ -144,16 +144,16 @@
     bottom: 66px;
     width: 32px;
     height: 4px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     transform: translateX(-50%);
     background-image: url(../images/reviews/marker.svg);
     background-repeat: no-repeat;
     background-size: contain;
     @include tab-pc {
-      bottom: 48px;
+      bottom: 68px;
     }
     @include pc-only {
-      bottom: 52px;
+      bottom: 72px;
     }
   }
 }
