@@ -3,30 +3,33 @@
     <p class="about__label top--text" data-aos="fade-down">
       Tradition and love
     </p>
-    <h2 class="title" data-aos="fade-up">How it's made?</h2>
+    <h2 class="title about__title" data-aos="fade-up">How it's made?</h2>
     <div class="about__content">
       <div class="about__image">
         <picture>
           <source
             srcset="
-              ./images/how-it-made-1-mob-1x-min.png 1x,
-              ./images/how-it-made-1-mob-2x-min.png 2x
+              ./images/how-it-made-img-pc-1x-min.png 1x,
+              ./images/how-it-made-img-pc-2x-min.png 2x
             "
-            media="(max-width: 767px)"
+            width="501"
+            media="(min-width: 1200px)"
           />
           <source
             srcset="
               ./images/how-it-made-img-tab-1x-min.png 1x,
               ./images/how-it-made-img-tab-2x-min.png 2x
             "
+            width="336"
             media="(max-width: 1199px)"
           />
           <source
             srcset="
-              ./images/how-it-made-img-pc-1x-min.png 1x,
-              ./images/how-it-made-img-pc-2x-min.png 2x
+              ./images/how-it-made-1-mob-1x-min.png 1x,
+              ./images/how-it-made-1-mob-2x-min.png 2x
             "
-            media="(min-width: 1200px)"
+            width="280"
+            media="(max-width: 767px)"
           />
           <img
             class="about__picture"
@@ -36,71 +39,49 @@
         </picture>
       </div>
       <div class="about__explanation">
-        <p class="about__pre-text text-explanation">
+        <p class="about__pre-text text-explanation hide11">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
           cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
           justo fringilla.
         </p>
-        <p class="about__text text-explanation">
+        <p class="about__text text-explanation hide12">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
           Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
           suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
           tincidunt.
         </p>
-        <p class="about__after-text text-explanation">
+        <p class="about__after-text text-explanation hide13">
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <div class="video">
-          <button data-modal-made-close class="modal-close clip btn-keyframe">
+
+        <div class="about__video video not-visible">
+          <button class="video-close-btn modal-close">
             <svg class="video__close" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-close-btn-min"></use>
             </svg>
           </button>
-          <h2 class="video__title">How we make our ice-cream</h2>
+          <h3 class="video__title">How we make our ice-cream</h3>
 
-          <video
-            class="video__made"
-            width="100%"
-            height="100%"
-            controls="controls"
-            poster="./video/poster-ice.webp"
-          >
-            <source
-              src="https://www.tiktok.com/@morella.uz/video/7039690788275490049?is_copy_url=1&is_from_webapp=v1"
-            />
-          </video>
+          <iframe
+            class="video__player"
+            src="https://www.youtube.com/embed/-8MPE74pq4w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
 
         <button
-          class="about__btn btn__bracket"
+          class="about__btn btn__bracket video-open-btn btn-keyframe"
           type="button"
-          data-modal-made-open
         >
-          Read more
+          See more
           <svg class="icon__bracket" width="5" height="8">
             <use href="./images/symbol-defs.svg#icon-bracket"></use>
           </svg>
         </button>
       </div>
-    </div>
-
-    <div class="modal-made">
-      <h2 class="modal-made__title">How we make our ice-cream</h2>
-      <video
-        class="modal-made__video"
-        data-modal-made
-        width="100%"
-        height="100%"
-        controls="controls"
-        poster="./video/poster-ice.webp"
-      >
-        <source src="./video/ice-2.mp4" />
-      </video>
-      <button data-modal-made-close class="modal-close">
-        <svg width="18px" height="18px">
-          <use href="./images/symbol-defs.svg#icon-close-btn-min"></use>
-        </svg>
-      </button>
     </div>
   </div>
 </section>
