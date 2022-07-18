@@ -71,6 +71,9 @@
 
 .header__btn {
   display: none;
+  & .bracket-icon {
+    margin-left: 12px;
+  }
   @include tab-pc {
     display: block;
     width: 160px;
