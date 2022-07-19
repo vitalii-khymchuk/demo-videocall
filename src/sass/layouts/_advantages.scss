@@ -3,7 +3,7 @@
   padding-top: 40px;
   padding-bottom: 60px;
   @include tab-only {
-padding-bottom: 64px;
+    padding-bottom: 64px;
   }
   @include pc-only {
     padding-bottom: 120px;
@@ -71,7 +71,6 @@ padding-bottom: 64px;
     @include pc-only {
       font-size: 16px;
       width: 288px;
-
     }
     width: 230px;
     font-family: 'DM Sans';
@@ -82,11 +81,17 @@ padding-bottom: 64px;
   }
 }
 
+.advent__container {
+  overflow: visible;
+}
+
 // add by Yurii
 .advent__list .advent__item:hover,
 .advent__list .advent__item:focus {
-  transition-duration: 350ms;
-  transform: scale(1.2);
+  @include tab-pc {
+    transition-duration: 350ms;
+    transform: scale(1.2);
+  }
 }
 
 .icon {
