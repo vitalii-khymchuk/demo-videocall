@@ -95,7 +95,7 @@
 }
 
 .icon {
-  &__first::before {
+  &-first::before {
     background-image: url(../images/advant/advant-img1.png);
     background-size: contain;
     width: 33px;
@@ -103,14 +103,14 @@
       background-image: url(../images/advant/advant-img1@2x.png);
     }
   }
-  &__second::before {
+  &-second::before {
     background-image: url(../images/advant/advant-img2.png);
     width: 50px;
     @include retina {
       background-image: url(../images/advant/advant-img2@2x.png);
     }
   }
-  &__third::before {
+  &-third::before {
     background-image: url(../images/advant/advant-img3.png);
     width: 45px;
     @include retina {

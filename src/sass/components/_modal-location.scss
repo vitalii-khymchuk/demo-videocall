@@ -40,12 +40,12 @@
   }
 }
 
-.modal-locations__box {
+.modal-locations-box {
   display: flex;
   flex-direction: column;
 }
 
-.map__box {
+.map-box {
   width: 100%;
   margin-bottom: 20px;
   @include mob-only {
