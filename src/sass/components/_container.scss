@@ -1,8 +1,8 @@
 .container {
-  overflow: hidden;
   margin: 0 auto;
   position: relative;
   @include mob-only {
+    overflow: hidden;
     padding-left: 20px;
     padding-right: 20px;
     max-width: 320px;
