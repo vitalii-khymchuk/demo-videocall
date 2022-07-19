@@ -61,9 +61,11 @@
   padding-left: 50px;
   padding-right: 50px;
   background-color: #fafafa;
-  @mixin tab-only {
+  height: 220px;
+  @include tab-only {
     font-size: 14px;
     line-height: 2.16;
+    height: 164px;
   }
   @include pc-only {
     font-size: 16px;
@@ -135,7 +137,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 6px;
+  padding-top: 0px;
 
   &::after {
     content: '';
