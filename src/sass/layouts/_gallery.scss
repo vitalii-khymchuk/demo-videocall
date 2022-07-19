@@ -23,6 +23,10 @@
   }
 }
 
+.gallery__container {
+  overflow: visible;
+}
+
 .gallery__wrapper {
   display: flex;
   gap: 2.5px;
