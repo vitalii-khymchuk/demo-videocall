@@ -135,7 +135,7 @@
   }
 }
 
-.modal__btn {
+.modal-btn {
   width: 140px;
   height: 34px;
   margin: auto;
@@ -143,8 +143,8 @@
   background-color: #d41443;
 }
 
-.modal__btn:hover,
-.modal__btn:focus {
+.modal-btn:hover,
+.modal-btn:focus {
   color: #d41443;
   background-color: rgba(255, 165, 186, 1);
   cursor: pointer;

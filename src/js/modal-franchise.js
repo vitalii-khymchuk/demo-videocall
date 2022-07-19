@@ -1,5 +1,6 @@
 (() => {
   const refs = {
+    body: document.body,
     openModalBtn: document.querySelector('[data-modal-franchise-open]'),
     closeModalBtn: document.querySelector('[data-modal-franchise-close]'),
     modal: document.querySelector('[data-modal-franchise]'),
@@ -11,5 +12,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
   }
 })();
