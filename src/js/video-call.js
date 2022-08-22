@@ -17,10 +17,11 @@ callFrame = window.DailyIframe.createFrame({
 callFrame.join({ url: 'https://super-company.daily.co/super-company' });
 
 const openCallBtn = document.querySelector('.openVideoChat');
-const iframeRef = document.querySelectorAll('iframe')[length - 1];
+const iframeRefs = document.querySelectorAll('iframe');
+const videoChatRef = iframeRefs[iframeRefs.length - 1];
 
-iframeRef.classList.add('is-hidden');
+videoChatRef.classList.add('is-hidden');
 
 openCallBtn.addEventListener('click', () =>
-  iframeRef.classList.toggle('is-hidden')
+  videoChatRef.classList.toggle('is-hidden')
 );
